@@ -19,6 +19,18 @@ services:
     networks: # Networks to join (Services on the same network can communicate with each other using their name)
       - backend
       - frontend
+
+  app-client:
+    build:
+      context: front
+      dockerfile: Dockerfile
+    ports:
+      - "4200:4200" 
+    restart: always
+    depends_on:
+      - app-server
+    networks:
+      - frontend  
       
   db:
     build: 
