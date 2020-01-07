@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<app-nav></app-nav>
+<main class="page service-page">
+  <section class="clean-block clean-services dark">
+    <div class="container">
+      <div class="block-heading">
+        <h2 class="text-info">Турніри</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4" *ngFor="let tournament of tournamentsList | paginate: { itemsPerPage: 9, currentPage: p }">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">{{tournament.name}} = {{tournament.id}}</h4>
+              <p class="card-text">Початок турніру: {{tournament.date_start | date }}</p>
+            </div>
+            <div><button class="btn btn-outline-primary btn-sm" type="button">Learn More</button></div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center;"><pagination-controls (pageChange)="p = $event"></pagination-controls></div>
+    </div>
+  </section>
+</main>
+<app-footer></app-footer>
+</body>
+
+</html>

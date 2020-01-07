@@ -1,23 +1,293 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94eca662-55f8-4724-ad47-ba18f997a4b2" name="Default Changelist" comment="" />
+    <list default="true" id="94eca662-55f8-4724-ad47-ba18f997a4b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controllers/GameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controllers/TournamentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controllers/TournamentGameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controllers/TournamentUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/models/Game/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/models/Game/GameDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/models/Tournament/Tournament.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/models/Tournament/TournamentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/models/TournamentGame/TournamentGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/models/TournamentGame/TournamentGameDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/models/TournamentUser/TournamentUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/models/TournamentUser/TournamentUserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/models/User/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/repositorys/GameRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/repositorys/TournamentGameRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/repositorys/TournamentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/repositorys/TournamentUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/services/GameService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/services/TournamentGameService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/services/TournamentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/services/TournamentUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/transoformers/GameGameDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/transoformers/TournamentGameTournamentGameDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/transoformers/TournamentTournamentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/transoformers/TournamentUserTournamentUserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/app/Models/Game.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/app/Models/LoginDataDTO.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/app/Models/Tournament.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/app/Models/TournamentGame.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/app/Models/TournamentUser.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/app/Models/User.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/app/Responses/Response.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/app/Services/tournament.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/app/Services/user-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/app/Validators/MustMatch.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/app/components/index/carusel/carousel.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/app/components/index/carusel/carousel.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/app/components/index/carusel/carousel.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/app/components/not-found/not-found.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/app/components/not-found/not-found.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/app/components/not-found/not-found.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/css/smoothproducts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/fonts/Simple-Line-Icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/fonts/Simple-Line-Icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/fonts/Simple-Line-Icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/fonts/Simple-Line-Icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/fonts/Simple-Line-Icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/fonts/simple-line-icons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/img/114-1149847_avatar-unknown-dp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/img/Adolfo-Moreno-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/img/scenery/image1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/img/scenery/image4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/img/scenery/image5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/img/scenery/image6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/img/sponsor/KIA_logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/img/sponsor/eksimbank.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/img/sponsor/galicia.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/img/sponsor/logo-milka.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/img/sponsor/morshinska.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/img/tech/image4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/js/smoothproducts.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/assets/js/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/5CEA56CD-0E0C-4C77-8F2C-B574EEC8558E.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/72_tn3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/81mE8WEnsAL._SL1500_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/82314775bd5ffd3f66c2da75cf3d2f4c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/960x0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/BFV_Standard_Edition.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/Battlefield-4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/Battlefield-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/EAuU2S3XsAAE8Go.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/Need-for-Speed-Heat-Digital-Deluxe-Upgrade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/The-Sims-4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/bashnia_neboskreb_gorod_151445_1920x1080.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/battlefield_4_eagames_4_images_1787001064.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/bmw_325i_e30_belyj_avto_93276_1920x1080.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/fifa_19_pc1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/ozero_bereg_derevia_150723_1920x1080.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/peshchera_kanon_temnyj_150634_1920x1080.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/pliazh_serfer_vid_sverhu_150551_1920x1080.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/porsche_911_turbo_997_black_front_porshe_chyornyj_solntse_gazon_bliki_94733_1920x1080.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/skaly_volny_vid_sverhu_151222_1920x1080.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/configs/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/configs/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/configs/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/configs/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/models/ConfirmationToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/models/ConfirmationToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/models/LoginDataDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/models/LoginDataDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/models/User/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/models/User/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/models/User/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/models/User/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/repositorys/ConfirmationTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/repositorys/ConfirmationTokenRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/responses/UserVerificationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/responses/UserVerificationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/transoformers/UserUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/transoformers/UserUserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/assets/images/cabinet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/assets/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/assets/images/errorimage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/assets/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/assets/images/like.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/assets/images/main_f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/assets/images/main_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/assets/images/main_t.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/assets/images/photo_f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/assets/images/photo_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/assets/images/photo_t.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/assets/images/photo_us.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/assets/images/yamborko.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/assets/images/емблема.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/cabinet.0861ee58e326bd5f0f11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/main-es2015.8b390e1d6155207bcad3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/main-es5.8b390e1d6155207bcad3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/main_f.af5e08062fa29bf45062.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/main_s.920e24cd212d0f2e8c44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/main_t.d6c92508d15c6f6b7162.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/polyfills-es2015.2987770fde9daa1d8a2e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/polyfills-es5.6696c533341b95a3d617.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/runtime-es2015.edb2fcf2778e7bf1d426.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/runtime-es5.edb2fcf2778e7bf1d426.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/styles.7ad0fcabbad753b81409.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/cabinet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/errorimage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/like.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/main_f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/main_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/main_t.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/photo_f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/photo_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/photo_t.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/photo_us.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/yamborko.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/емблема.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/cabinet.0861ee58e326bd5f0f11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main-es2015.8b390e1d6155207bcad3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main-es5.8b390e1d6155207bcad3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main_f.af5e08062fa29bf45062.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main_s.920e24cd212d0f2e8c44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main_t.d6c92508d15c6f6b7162.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/polyfills-es2015.2987770fde9daa1d8a2e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/polyfills-es5.6696c533341b95a3d617.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/runtime-es2015.edb2fcf2778e7bf1d426.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/runtime-es5.edb2fcf2778e7bf1d426.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles.7ad0fcabbad753b81409.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/configs/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/configs/SecurityConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/configs/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/configs/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controllers/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controllers/ArticleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/models/Article/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/models/Article/Article.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/models/Article/ArticleDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/models/Article/ArticleDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/models/ConfirmationToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/models/ConfirmationToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/models/LoginDataDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/models/LoginDataDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/models/User/User$role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/models/User/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/models/User/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/models/User/UserDTO$role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/models/User/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/models/User/UserDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/properties/FileStorageProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/properties/FileStorageProperties.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/repositorys/ArticleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/repositorys/ArticleRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/repositorys/ConfirmationTokenRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/repositorys/ConfirmationTokenRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/repositorys/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/repositorys/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/responses/UploadFileResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/responses/UploadFileResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/responses/UserVerificationResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/responses/UserVerificationResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/services/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/services/ArticleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/services/ConfirmationTokenService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/services/ConfirmationTokenService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/services/EmailSenderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/services/EmailSenderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/services/FileStorageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/services/FileStorageService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/transoformers/ArticleArticleDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/transoformers/ArticleArticleDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/transoformers/UserUserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/transoformers/UserUserDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/assets/images/cabinet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/assets/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/assets/images/errorimage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/assets/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/assets/images/like.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/assets/images/main_f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/assets/images/main_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/assets/images/main_t.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/assets/images/photo_f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/assets/images/photo_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/assets/images/photo_t.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/assets/images/photo_us.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/assets/images/yamborko.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/assets/images/емблема.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/cabinet.0861ee58e326bd5f0f11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/main-es2015.8b390e1d6155207bcad3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/main-es5.8b390e1d6155207bcad3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/main_f.af5e08062fa29bf45062.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/main_s.920e24cd212d0f2e8c44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/main_t.d6c92508d15c6f6b7162.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/polyfills-es2015.2987770fde9daa1d8a2e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/polyfills-es5.6696c533341b95a3d617.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/runtime-es2015.edb2fcf2778e7bf1d426.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/runtime-es5.edb2fcf2778e7bf1d426.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/styles.7ad0fcabbad753b81409.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/cabinet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/errorimage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/like.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/main_f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/main_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/main_t.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/photo_f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/photo_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/photo_t.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/photo_us.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/yamborko.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/емблема.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/cabinet.0861ee58e326bd5f0f11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/main-es2015.8b390e1d6155207bcad3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/main-es5.8b390e1d6155207bcad3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/main_f.af5e08062fa29bf45062.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/main_s.920e24cd212d0f2e8c44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/main_t.d6c92508d15c6f6b7162.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/polyfills-es2015.2987770fde9daa1d8a2e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/polyfills-es5.6696c533341b95a3d617.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/runtime-es2015.edb2fcf2778e7bf1d426.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/runtime-es5.edb2fcf2778e7bf1d426.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/styles.7ad0fcabbad753b81409.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/gm/UserMarketApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/gm/UserMarketApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/app.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tennis.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../tennis.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1VlDUo9KrFhddKxM0CcOA24gpyZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -50,33 +320,49 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="320" y="102" width="811" height="669" key="#Project_Structure/0.23.1440.828@0.23.1440.828" timestamp="1577980560078" />
-    <state x="458" y="191" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577976871687">
+    <state x="533" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1578150618416">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="458" y="191" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.828@0.23.1440.828" timestamp="1577976871687" />
-    <state width="1398" height="214" key="GridCell.Tab.0.bottom" timestamp="1577983352882">
+    <state x="533" y="153" key="#com.intellij.ide.util.MemberChooser/0.23.1440.828@0.23.1440.828" timestamp="1578150618416" />
+    <state x="458" y="191" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578150683881">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1577983352882" />
-    <state width="1398" height="214" key="GridCell.Tab.0.center" timestamp="1577983352881">
+    <state x="458" y="191" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.828@0.23.1440.828" timestamp="1578150683881" />
+    <state width="1398" height="331" key="GridCell.Tab.0.bottom" timestamp="1578351001403">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1577983352881" />
-    <state width="1398" height="214" key="GridCell.Tab.0.left" timestamp="1577983352880">
+    <state width="1398" height="331" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1578351001403" />
+    <state width="1398" height="140" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1578269980922" />
+    <state width="1398" height="331" key="GridCell.Tab.0.center" timestamp="1578351001401">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1577983352880" />
-    <state width="1398" height="214" key="GridCell.Tab.0.right" timestamp="1577983352881">
+    <state width="1398" height="331" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1578351001401" />
+    <state width="1398" height="140" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1578269980919" />
+    <state width="1398" height="331" key="GridCell.Tab.0.left" timestamp="1578351001401">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1577983352881" />
-    <state x="378" y="199" width="837" height="540" key="find.popup" timestamp="1577978828958">
+    <state width="1398" height="331" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1578351001401" />
+    <state width="1398" height="140" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1578269980918" />
+    <state width="1398" height="331" key="GridCell.Tab.0.right" timestamp="1578351001402">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="378" y="199" width="837" height="540" key="find.popup/0.23.1440.828@0.23.1440.828" timestamp="1577978828958" />
+    <state width="1398" height="331" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1578351001402" />
+    <state width="1398" height="140" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1578269980921" />
+    <state x="258" y="99" key="Maven.ArtifactSearchDialog" timestamp="1578175559048">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="258" y="99" key="Maven.ArtifactSearchDialog/0.23.1440.828@0.23.1440.828" timestamp="1578175559048" />
+    <state x="334" y="261" width="1033" height="540" key="find.popup" timestamp="1578347093738">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="334" y="261" width="1033" height="540" key="find.popup/0.23.1440.828@0.23.1440.828" timestamp="1578347093738" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1577978360796">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="600" height="424" key="javadoc.popup/0.23.1440.828@0.23.1440.828" timestamp="1577978360796" />
+    <state x="426" y="60" key="refactoring.ChangeSignatureDialog" timestamp="1578240112495">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="426" y="60" key="refactoring.ChangeSignatureDialog/0.23.1440.828@0.23.1440.828" timestamp="1578240112495" />
   </component>
 </project>

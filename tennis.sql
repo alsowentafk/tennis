@@ -30,7 +30,7 @@ CREATE TABLE `confirmation_token` (
   PRIMARY KEY (`id`),
   KEY `confirmation_token_user_id_fk` (`user_id`),
   CONSTRAINT `confirmation_token_user_id_fk` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,6 +39,7 @@ CREATE TABLE `confirmation_token` (
 
 LOCK TABLES `confirmation_token` WRITE;
 /*!40000 ALTER TABLE `confirmation_token` DISABLE KEYS */;
+INSERT INTO `confirmation_token` VALUES (32,27,'2020-01-06 01:18:13','yW8NatCc');
 /*!40000 ALTER TABLE `confirmation_token` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -53,11 +54,13 @@ CREATE TABLE `game` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `first_player` bigint(20) NOT NULL,
   `second_player` bigint(20) NOT NULL,
-  `first_score` int(11) NOT NULL,
-  `second_score` int(11) NOT NULL,
-  `winner` bigint(20) NOT NULL,
+  `first_score` int(11) DEFAULT NULL,
+  `second_score` int(11) DEFAULT NULL,
+  `winner` int(1) DEFAULT NULL,
+  `completed` tinyint(1) NOT NULL,
+  `type` varchar(55) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -66,6 +69,7 @@ CREATE TABLE `game` (
 
 LOCK TABLES `game` WRITE;
 /*!40000 ALTER TABLE `game` DISABLE KEYS */;
+INSERT INTO `game` VALUES (1,1,2,1,2,1,1,'final');
 /*!40000 ALTER TABLE `game` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -84,7 +88,7 @@ CREATE TABLE `tournament` (
   `date_close_reg` datetime NOT NULL,
   `date_cancel_reg` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -93,7 +97,7 @@ CREATE TABLE `tournament` (
 
 LOCK TABLES `tournament` WRITE;
 /*!40000 ALTER TABLE `tournament` DISABLE KEYS */;
-INSERT INTO `tournament` VALUES (1,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36');
+INSERT INTO `tournament` VALUES (1,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36'),(2,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36'),(3,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36'),(4,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36'),(5,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36'),(6,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36'),(7,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36'),(8,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36'),(9,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36'),(10,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36'),(11,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36'),(12,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36'),(13,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36'),(14,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36'),(15,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36'),(16,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36'),(17,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36'),(18,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36'),(19,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36'),(20,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36'),(21,'g2012','adflasdhfljkashfljkasdhfkjlsahfklashfkjasdhfaskljdf','2019-12-31 17:10:32','2019-12-31 17:10:35','2019-12-31 17:10:36');
 /*!40000 ALTER TABLE `tournament` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -113,7 +117,7 @@ CREATE TABLE `tournament_game` (
   KEY `tournament_game_game_id_fk` (`game_id`),
   CONSTRAINT `tournament_game_game_id_fk` FOREIGN KEY (`game_id`) REFERENCES `game` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `tournament_match_tournament_id_fk` FOREIGN KEY (`tournament_id`) REFERENCES `tournament` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -143,7 +147,7 @@ CREATE TABLE `tournament_user` (
   KEY `tournament_user_user_id_fk` (`user_id`),
   CONSTRAINT `tournament_user_tournament_id_fk` FOREIGN KEY (`tournament_id`) REFERENCES `tournament` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `tournament_user_user_id_fk` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -176,7 +180,7 @@ CREATE TABLE `user` (
   `hand` varchar(7) NOT NULL,
   `role` enum('user','admin') NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -185,7 +189,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'asfasdasdfasd@gmail.com',0,'','','dima','yamborko','Anatoliovich','2019-05-31 17:09:16','Khmelnitskiy','right','user'),(2,'adsfadfadsf@gmail.com',0,'','','yura','kashpersiy','Vasuliovich','2019-12-31 17:10:03','Khmelnitskiy','left','user');
+INSERT INTO `user` VALUES (1,'admin@gmail.com',1,'k2F-KywQq5*!w9K4','','Володимир','Кружко','Володимирович','2019-05-31 17:09:16','Khmelnitskiy','right','admin'),(2,'adsfadfadsf@gmail.com',0,'','','yura','kashpersiy','Vasuliovich','2019-12-31 17:10:03','Khmelnitskiy','left','user'),(27,'a@a.c',1,'111111aA','muscle_cars_dodge_dodge_charger_avto_stilnyy_83882_2560x1600.jpg','a','a','a','2020-12-31 00:00:00','a','Права','user');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -198,4 +202,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-01-02 15:09:19
+-- Dump completed on 2020-01-07  0:52:43

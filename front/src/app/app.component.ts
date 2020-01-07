@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import * as uuid from 'uuid';
+import {User} from './Models/User';
 
 @Component({
   selector: 'app-root',
@@ -7,12 +9,6 @@ import {HttpClient} from '@angular/common/http';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title;
-  constructor(private httpClient: HttpClient) {
-      const endpoint = 'http://localhost:8080/api/user/hello';
-      httpClient.get<string>(endpoint).subscribe((data) => {
-        this.title = data;
-        console.log(data)
-      });
-  }
+  static token = 'a2d729af-7815-4639-8e43-f0663807baa2';
+  static admin = {email: 'admin@gmail.com', password: 'k2F-KywQq5*!w9K4', key: '8a2c169f-ef67-4a73-ae30-5b1e28bac920'};
 }

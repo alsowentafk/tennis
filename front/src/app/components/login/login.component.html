@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+<app-nav></app-nav>
+<main class="page login-page">
+  <section class="clean-block clean-form dark">
+    <div class="container">
+      <div class="block-heading">
+        <h2 class="text-info">Вхід</h2>
+        <p>Введіть будь ласка email і пароль</p>
+      </div>
+      <form (ngSubmit)="onSubmit()" [formGroup]="loginForm" method="POST"
+            name="f1">
+        <div class="form-group">
+          <label  for="login_a">Електронна адреса:</label>
+          <input [ngClass]="{ 'is-invalid': submitted && f1.login_a.errors || invalidLogin}" class="form-control"
+                 formControlName="login_a" id="login_a" name="login_a"
+                 placeholder="example@example.com"
+                 type="text">
+          <div *ngIf="(f1.login_a.errors && (f1.login_a.dirty || f1.login_a.touched)) || (submitted && f1.login_a.errors)"
+               class="text-danger">
+            <div *ngIf="f1.login_a.errors.required">
+              Поле є обов'язковим.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="pass_a">Пароль</label>
+          <input [ngClass]="{ 'is-invalid': submitted && f1.pass_a.errors || invalidLogin}" class="form-control"
+                 formControlName="pass_a" id="pass_a" name="pass_a"
+                 placeholder="Пароль"
+                 type="password">
+          <div *ngIf="(f1.pass_a.errors && (f1.pass_a.dirty || f1.pass_a.touched)) || (submitted && f1.pass_a.errors)"
+               class="text-danger">
+            <div *ngIf="f1.pass_a.errors.required">
+              Поле є обов'язковим.
+            </div>
+          </div>
+        </div>
+        <div *ngIf="invalidLogin" class="text-danger">
+          Пароль або логін невірний.
+        </div>
+        <div style="text-align: center;">
+          <button class="btn btn-primary" name="sab" [class.spinner]="loading" [disabled]="loading" type="submit">
+          Авторизація
+        </button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+<app-footer></app-footer>
+</body>
+
+</html>

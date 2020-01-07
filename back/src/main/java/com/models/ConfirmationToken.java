@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.apache.commons.lang3.RandomStringUtils;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -18,8 +19,8 @@ import java.util.UUID;
 public class ConfirmationToken {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "token_id")
-    private Long token_id;
+    @Column(name = "id")
+    private Long id;
 
     @Column(name = "confirmation_token")
     private String confirmationToken;
@@ -35,7 +36,7 @@ public class ConfirmationToken {
     public ConfirmationToken(User user) {
         this.user_id = user;
         createdDate = new Date();
-        confirmationToken = UUID.randomUUID().toString();
+        confirmationToken = RandomStringUtils.random(8, true, true);
     }
 
 }

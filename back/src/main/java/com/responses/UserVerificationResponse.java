@@ -1,5 +1,6 @@
 package com.responses;
 
+import com.models.User.User;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,7 +13,5 @@ import lombok.Setter;
 public class UserVerificationResponse {
     private int status;
     private String message;
-    private String email;
-    private Long id;
-    private String login;
+    private User user;
 }

@@ -28,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/angular-button-loader/style/button-loader.min.css"
             ],
             "scripts": []
           },

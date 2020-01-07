@@ -6,6 +6,5 @@ WORKDIR /build/
 RUN mvn package
 FROM openjdk:8-jre-alpine
 WORKDIR /app
-RUN mvn package
 COPY --from=MAVEN_BUILD /build/target/gm-0.0.1-SNAPSHOT.jar /app/
 ENTRYPOINT ["java", "-jar", "gm-0.0.1-SNAPSHOT.jar"]

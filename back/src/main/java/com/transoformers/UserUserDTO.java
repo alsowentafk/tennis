@@ -20,6 +20,7 @@ public class UserUserDTO {
         user.setBirthday(userDTO.getBirthday());
         user.setCity(userDTO.getCity());
         user.setHand(userDTO.getHand());
+        user.setRole(userDTO.getRole());
         return user;
     }
 
@@ -36,6 +37,7 @@ public class UserUserDTO {
         userDTO.setBirthday(user.getBirthday());
         userDTO.setCity(user.getCity());
         userDTO.setHand(user.getHand());
+        userDTO.setRole(user.getRole());
         return userDTO;
     }
 }

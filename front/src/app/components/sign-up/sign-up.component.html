@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<app-nav></app-nav>
+<main class="page registration-page">
+  <section class="clean-block clean-form dark">
+    <div class="container">
+      <div class="block-heading">
+        <h2 class="text-info">Реєстрація</h2>
+        <p>Заповніть будь ласка всі обов'язкові поля</p>
+      </div>
+      <div id="reg_form" style="display: block">
+        <form (ngSubmit)='onSubmit()' [formGroup]="registerForm" method="POST" name="f">
+        <div class="form-group">
+          <label for="email">Електронна адресса:</label>
+          <input (change)="checkExistingEmail($event)"
+                 [ngClass]="{ 'is-invalid': submitted && f.email.errors || EmailExist}" class="form-control"
+                 formControlName="email" id="email" name="email1"
+                 placeholder="example@example.com"
+                 type="email">
+          <div *ngIf="(f.email.invalid && (f.email.dirty || f.email.touched)) || (submitted && f.email.errors)"
+               class="text-danger">
+
+            <div *ngIf="f.email.errors.required">
+              Електронна адреса не вказана.
+            </div>
+            <div *ngIf="f.email.errors.pattern || f.email.errors.email">
+              Електронна адреса не вірна.
+            </div>
+          </div>
+          <div *ngIf="EmailExist" class="text-danger">
+            Електронна адреса вже використовується.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="pass1">Пароль:</label>
+          <input [ngClass]="{ 'is-invalid': submitted && f.pass1.errors }" class="form-control" formControlName="pass1"
+                 id="pass1" name="pass1" placeholder="123456aZ"
+                 type="password">
+          <div *ngIf="(f.pass1.invalid && (f.pass1.dirty || f.pass1.touched)) || (submitted && f.pass1.errors)"
+               class="text-danger">
+
+            <div *ngIf="f.pass1.errors.required">
+              Пароль не вказано.
+            </div>
+            <div *ngIf="f.pass1.errors.pattern || f.pass1.errors.minlength">
+              Пароль повиннен складатись з 8 символів і включати цифри і букви верхнього і нижнього регістрів.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="pass2">Підтвердіть пароль:</label>
+          <input [ngClass]="{ 'is-invalid': submitted && f.pass2.errors}" class="form-control" formControlName="pass2"
+                 id="pass2" name="pass2"
+                 placeholder="Підтвердіть пароль"
+                 type="password">
+          <div *ngIf="(f.pass2.invalid && (f.pass2.dirty || f.pass2.touched)) || (submitted && f.pass2.errors)"
+               class="text-danger">
+
+            <div *ngIf="f.pass2.errors.required">
+              Підтвердження паролю обо'вязкове.
+            </div>
+            <div *ngIf="f.pass2.errors.mustMatch">
+              Паролі не співпадають.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label" for="image">Фото:</label>
+            <img [src]="previewUrl" alt="photoAddGame" style="width: 150px; height: 150px; margin-left: 5%; margin-bottom: 5%"/>
+            <input (change)="fileProgress($event)" [ngClass]="{'is-invalid': f.submitted && f.image.invalid}"
+                   accept="image/*" class="form-control-file" formControlName="image"
+                   id="image" name="image" type="file"
+                   value="Select file"/>
+            <div *ngIf="(f.image.errors && (f.image.dirty)) || (submitted && f.image.errors)"
+                 class="text-danger">
+              <div *ngIf="f.image.errors.required">
+                Фото є обов'язковим.
+              </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label" for="firstName">Ім'я:</label>
+            <input [ngClass]="{ 'is-invalid': submitted && f.firstName.errors}" class="form-control"
+                   formControlName="firstName"
+                   id="firstName"
+                   name="firstName" placeholder="Іван" type="text">
+            <div *ngIf="(f.firstName.errors && (f.firstName.dirty)) || (submitted && f.firstName.errors)"
+                 class="text-danger">
+              <div *ngIf="f.firstName.errors.required">
+                Ім'я є обовязкове.
+              </div>
+              <div *ngIf="f.firstName.errors.maxlength">
+                Занадто довге.
+              </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label" for="secondName">Прізвище:</label>
+          <input [ngClass]="{ 'is-invalid': submitted && f.secondName.errors}" class="form-control"
+                 formControlName="secondName"
+                 id="secondName"
+                 name="secondName" placeholder="Іванов" type="text">
+          <div *ngIf="(f.secondName.errors && (f.secondName.dirty)) || (submitted && f.secondName.errors)"
+               class="text-danger">
+            <div *ngIf="f.secondName.errors.required">
+              Прізвище є обовязкове.
+            </div>
+            <div *ngIf="f.secondName.errors.maxlength">
+              Занадто довге.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label" for="surname">По батькові:</label>
+          <input [ngClass]="{ 'is-invalid': submitted && f.surname.errors}" class="form-control"
+                 formControlName="surname"
+                 id="surname"
+                 name="surname" placeholder="Іванович" type="text">
+          <div *ngIf="(f.surname.errors && (f.surname.dirty)) || (submitted && f.surname.errors)"
+               class="text-danger">
+            <div *ngIf="f.surname.errors.required">
+              По батькові є обовязковим полем.
+            </div>
+            <div *ngIf="f.surname.errors.maxlength">
+              Занадто довге.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label" for="birthday">Дата народження:</label>
+          <input [ngClass]="{ 'is-invalid': submitted && f.birthday.errors}" class="form-control"
+                 formControlName="birthday"
+                 id="birthday"
+                 name="birthday" type="date">
+          <div *ngIf="(f.birthday.errors && (f.birthday.dirty)) || (submitted && f.birthday.errors)"
+               class="text-danger">
+            <div *ngIf="f.birthday.errors.required">
+              Дата народження э обов'язкова.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label" for="city">Місто:</label>
+          <input [ngClass]="{ 'is-invalid': submitted && f.city.errors}" class="form-control"
+                 formControlName="city"
+                 id="city"
+                 name="city" placeholder="Хмельницький" type="text">
+          <div *ngIf="(f.city.errors && (f.city.dirty)) || (submitted && f.city.errors)"
+               class="text-danger">
+            <div *ngIf="f.city.errors.required">
+              Місто є обовязковим полем.
+            </div>
+            <div *ngIf="f.city.errors.maxlength">
+              Занадто довге.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label" for="hand">Робоча рука:</label>
+            <select class="form-control" id="hand" [ngClass]="{ 'is-invalid': submitted && f.hand.errors}"
+                    formControlName="hand"
+                    name="hand">
+              <option>Права</option>
+              <option>Ліва</option>
+            </select>
+
+          <div *ngIf="(f.hand.errors && (f.hand.dirty)) || (submitted && f.hand.errors)"
+               class="text-danger">
+            <div *ngIf="f.hand.errors.required">
+              Робоча рука є обов'язковим полем.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group form-check">
+          <input [ngClass]="{ 'is-invalid': submitted && f.acceptTerms.errors }" class="form-check-input"
+                 formControlName="acceptTerms" id="acceptTerms"
+                 type="checkbox"/>
+          <label class="form-check-label" for="acceptTerms">Погоджуюсь з обробкою персональних данних</label>
+          <div *ngIf="submitted && f.acceptTerms.errors" class="invalid-feedback">Підтвердження є обов'язковим</div>
+        </div>
+        <button class="btn btn-primary" type="submit" [class.spinner]="loading_reg" [disabled]="loading_reg">Зареєструватись</button>
+      </form>
+      </div>
+      <div id="after_reg_form" style="display: none">
+        <form (ngSubmit)="onSubmitConfirmForm()" [formGroup]="confirmationForm" method="POST"
+              name="confirmation_form">
+          <div class="form-group">
+            <label for="code">Введіть 8-значний код який був вам відправлений на вашу електронну адресу</label>
+            <input [ngClass]="{ 'is-invalid': confirmationForm_submitted && confirmation_form.code.errors}" class="form-control"
+                   formControlName="code" id="code" name="code"
+                   type="text">
+            <div *ngIf="(confirmation_form.code.errors && (confirmation_form.code.dirty
+            || confirmation_form.code.touched) || invalidCode)"
+                 class="text-danger">
+              <div *ngIf="confirmation_form.code.errors || invalidCode">
+                Код невірний
+              </div>
+            </div>
+            <a style="color: blue; text-decoration: blink"  (click)="sendCodeOneMore()">Відправити код ще раз</a>
+          </div>
+          <button class="btn btn-primary" name="sab" type="submit" [class.spinner]="loading_confirm" [disabled]="loading_confirm">Підтвердити</button>
+        </form>
+      </div>
+      <div id="successful-reg" style="display: none">
+        <h2>Ваша аккаунт успішно підтвердженно тепер ви можете ввійти</h2>
+      </div>
+    </div>
+  </section>
+</main>
+<app-footer></app-footer>
+</body>
+
+</html>

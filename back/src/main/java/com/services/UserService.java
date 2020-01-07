@@ -3,11 +3,14 @@ package com.services;
 import com.models.ConfirmationToken;
 import com.models.User.User;
 import com.models.User.UserDTO;
+import com.repositorys.ConfirmationTokenRepository;
 import com.repositorys.UserRepository;
 import com.transoformers.UserUserDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.mail.SimpleMailMessage;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -17,36 +20,42 @@ import java.util.List;
 @Service
 @Slf4j
 @RequiredArgsConstructor
-public class UserService {
+public class UserService  {
 
     private final UserRepository repository;
     private final UserUserDTO converter;
     private final ConfirmationTokenService confirmationTokenService;
+    private final ConfirmationTokenRepository confirmationTokenRepository;
     private final EmailSenderService emailSenderService;
 
     public UserDTO getUserByID(Long id) {
         return converter.ConvertToUserDTO(repository.findById(id).get());
     }
 
-    public void save(UserDTO userDTO) {
+    public User save(UserDTO userDTO) {
         User user = converter.ConvertToUser(userDTO);
-        repository.save(user);
+        user.setIs_confirmed(false);
+        if(emailExist(userDTO.getEmail())) return null;
+        User savedUser = repository.save(user);
+        sendNewCode(savedUser);
+        return savedUser;
+    }
+    public void sendNewCode(User user){
+        confirmationTokenRepository.deletePreviousTokens(user.getId());
         ConfirmationToken confirmationToken = new ConfirmationToken(user);
         confirmationTokenService.save(confirmationToken);
-        log.info("save Token {} for User {} at {}", confirmationToken.getToken_id(), userDTO,
-                Calendar.getInstance().getTime());
         SimpleMailMessage mailMessage = new SimpleMailMessage();
-        mailMessage.setTo(userDTO.getEmail());
-        mailMessage.setSubject("Complete Registration on khmeet.org!");
+        mailMessage.setTo(user.getEmail());
+        mailMessage.setSubject("Підтвердіть реєстрацію на сайті тенісного клубу НТК 'Митра'!\n");
         mailMessage.setFrom("KHMEET.Khmelnytskyi@gmail.com");
-        String confirmTokenEndpoint = "http://localhost:8080/api/user/confirm-account?token=";
-        mailMessage.setText("To confirm your account, please click here : "
-                + confirmTokenEndpoint + confirmationToken.getConfirmationToken());
+        mailMessage.setText("Для підтвердження вашого аккаунту, ваш код підтвердження:  : "
+                +  confirmationToken.getConfirmationToken());
         emailSenderService.sendEmail(mailMessage);
-        log.info("send message {} on email {} at {}", mailMessage.getSubject(), userDTO.getEmail(),
-                Calendar.getInstance().getTime());
     }
-
+    public Boolean emailExist(String email){
+        User user = repository.findByEmailIgnoreCase(email);
+        return user != null;
+    }
     public void update(UserDTO userDTO) {
         UserDTO temp = converter.ConvertToUserDTO(repository.findById(userDTO.getId()).get());
         temp.setEmail(userDTO.getEmail());

@@ -1,0 +1,35 @@
+<ngb-carousel
+  [showNavigationArrows]="true"
+  [showNavigationIndicators]="true"
+  interval="2000"
+  [keyboard]="true"
+  [pauseOnHover]="true"
+  [wrap]="true"
+  [activeId]="'slideTwo'"
+>
+  <ng-template ngbSlide id="slideOne">
+    <div class="picsum-img-wrapper" (click)="goSponsorUrl('eksimbank')">
+      <div style="text-align: center;"><img [src]="images[0].picture" alt="Random first slide"></div>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide id="slideTwo">
+    <div class="picsum-img-wrapper" (click)="goSponsorUrl('galicia')">
+      <div style="text-align: center;"><img [src]="images[1].picture" alt="Random second slide"></div>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide id="slideThree">
+    <div class="picsum-img-wrapper" (click)="goSponsorUrl('kia')">
+      <div style="text-align: center;"><img [src]="images[2].picture" alt="Random third slide"></div>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide id="slideFour">
+    <div class="picsum-img-wrapper" (click)="goSponsorUrl('milka')">
+      <div style="text-align: center;"><img [src]="images[3].picture" alt="Random fourth slide"></div>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide id="slideFive">
+    <div class="picsum-img-wrapper" (click)="goSponsorUrl('morshinska')">
+      <div style="text-align: center;"><img [src]="images[4].picture" alt="Random fifth slide"></div>
+    </div>
+  </ng-template>
+</ngb-carousel>
