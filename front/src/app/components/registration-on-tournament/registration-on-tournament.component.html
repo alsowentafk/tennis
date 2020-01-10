@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<app-nav></app-nav>
+<main class="page registration-page" style="margin-top: 3%">
+  <section class="clean-block clean-form dark">
+    <div class="container">
+      <div class="block-heading">
+        <h2 class="text-info">Реєстрація турнір</h2>
+        <p>Підтвердіть свої особисті данні</p>
+      </div>
+      <div id="reg_form" style="display: block">
+        <form (ngSubmit)='onSubmit()' [formGroup]="registerForm" method="POST" name="f">
+
+          <div class="form-group">
+            <label class="control-label" for="image">Фото: </label>
+            <img [src]="previewUrl" alt="photoAddGame" style="width: 150px; height: 150px; margin-left: 5%; margin-bottom: 5%"/>
+            <input (change)="fileProgress($event, 'userPhoto')" [ngClass]="{'is-invalid': f.submitted && f.image.invalid}"
+                   accept="image/*" class="form-control-file" formControlName="image"
+                   id="image" name="image" type="file"
+                   value="Оберіть файл"/>
+            <div *ngIf="(f.image.errors && (f.image.dirty)) || (submitted && f.image.errors)"
+                 class="text-danger">
+              <div *ngIf="f.image.errors.required">
+                Фото є обов'язковим.
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label" for="firstName">Ім'я:</label>
+            <input [ngClass]="{ 'is-invalid': submitted && f.firstName.errors}" class="form-control"
+                   formControlName="firstName"
+                   id="firstName"
+                   name="firstName" placeholder="Іван" type="text" [value]="user.first_name">
+            <div *ngIf="(f.firstName.errors && (f.firstName.dirty)) || (submitted && f.firstName.errors)"
+                 class="text-danger">
+              <div *ngIf="f.firstName.errors.required">
+                Ім'я є обовязкове.
+              </div>
+              <div *ngIf="f.firstName.errors.maxlength">
+                Занадто довге.
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label" for="secondName">Прізвище:</label>
+            <input [ngClass]="{ 'is-invalid': submitted && f.secondName.errors}" class="form-control"
+                   formControlName="secondName"
+                   id="secondName"
+                   name="secondName" placeholder="Іванов" type="text" [value]="user.second_name">
+            <div *ngIf="(f.secondName.errors && (f.secondName.dirty)) || (submitted && f.secondName.errors)"
+                 class="text-danger">
+              <div *ngIf="f.secondName.errors.required">
+                Прізвище є обовязкове.
+              </div>
+              <div *ngIf="f.secondName.errors.maxlength">
+                Занадто довге.
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label" for="surname">По батькові:</label>
+            <input [ngClass]="{ 'is-invalid': submitted && f.surname.errors}" class="form-control"
+                   formControlName="surname"
+                   id="surname"
+                   name="surname" placeholder="Іванович" type="text" [value]="user.surname">
+            <div *ngIf="(f.surname.errors && (f.surname.dirty)) || (submitted && f.surname.errors)"
+                 class="text-danger">
+              <div *ngIf="f.surname.errors.required">
+                По батькові є обовязковим полем.
+              </div>
+              <div *ngIf="f.surname.errors.maxlength">
+                Занадто довге.
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label" for="birthday">Дата народження:</label>
+            <input [ngClass]="{ 'is-invalid': submitted && f.birthday.errors}" class="form-control"
+                   formControlName="birthday"
+                   id="birthday"
+                   name="birthday" type="date">
+            <div *ngIf="(f.birthday.errors && (f.birthday.dirty)) || (submitted && f.birthday.errors)"
+                 class="text-danger">
+              <div *ngIf="f.birthday.errors.required">
+                Дата народження э обов'язкова.
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label" for="city">Місто:</label>
+            <input [ngClass]="{ 'is-invalid': submitted && f.city.errors}" class="form-control"
+                   formControlName="city"
+                   id="city"
+                   name="city" placeholder="Хмельницький" type="text" [value]="user.city">
+            <div *ngIf="(f.city.errors && (f.city.dirty)) || (submitted && f.city.errors)"
+                 class="text-danger">
+              <div *ngIf="f.city.errors.required">
+                Місто є обовязковим полем.
+              </div>
+              <div *ngIf="f.city.errors.maxlength">
+                Занадто довге.
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label" for="hand">Робоча рука:</label>
+            <select class="form-control" id="hand" [ngClass]="{ 'is-invalid': submitted && f.hand.errors}"
+                    formControlName="hand"
+                    name="hand" [value]="user.hand">
+              <option>Права</option>
+              <option>Ліва</option>
+            </select>
+
+            <div *ngIf="(f.hand.errors && (f.hand.dirty)) || (submitted && f.hand.errors)"
+                 class="text-danger">
+              <div *ngIf="f.hand.errors.required">
+                Робоча рука є обов'язковим полем.
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label" for="image">Фото  свідоцтва про народження:</label>
+            <img [src]="previewUrlBirthCertificate" alt="photoAddGame" style="width: 150px; height: 150px; margin-left: 5%; margin-bottom: 5%"/>
+            <input (change)="fileProgress($event,'birthCertificate')" [ngClass]="{'is-invalid': f.submitted && f.birth_certificate.invalid}"
+                   accept="image/*" class="form-control-file" formControlName="birth_certificate"
+                   id="birth_certificate" name="birth_certificate" type="file"
+                   value="Оберіть файл"/>
+            <div *ngIf="(f.birth_certificate.errors && (f.birth_certificate.dirty)) || (submitted && f.birth_certificate.errors)"
+                 class="text-danger">
+              <div *ngIf="f.birth_certificate.errors.required">
+                Фото свідоцтва є обов'язковим.
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label" for="image">Фото  квитанції про  благодійний внесок:</label>
+            <img [src]="previewUrlPayCertificate" alt="photoAddGame" style="width: 150px; height: 150px; margin-left: 5%; margin-bottom: 5%"/>
+            <input (change)="fileProgress($event, 'payCertificate')" [ngClass]="{'is-invalid': f.submitted && f.pay_certificate.invalid}"
+                   accept="image/*" class="form-control-file" formControlName="pay_certificate"
+                   id="pay_certificate" name="pay_certificate" type="file"
+                   value="Оберіть файл"/>
+            <div *ngIf="(f.pay_certificate.errors && (f.pay_certificate.dirty)) || (submitted && f.pay_certificate.errors)"
+                 class="text-danger">
+              <div *ngIf="f.pay_certificate.errors.required">
+                Фото квитанції є обов'язковим.
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group form-check">
+            <input [ngClass]="{ 'is-invalid': submitted && f.acceptTerms.errors }" class="form-check-input"
+                   formControlName="acceptTerms" id="acceptTerms"
+                   type="checkbox"/>
+            <label class="form-check-label" for="acceptTerms">Погоджуюсь з положенням та регламентом про турнір</label>
+            <div *ngIf="submitted && f.acceptTerms.errors" class="invalid-feedback">Підтвердження є обов'язковим</div>
+          </div>
+          <button class="btn btn-primary" type="submit" [class.spinner]="loading_reg" [disabled]="loading_reg">Зареєструватись</button>
+        </form>
+      </div>
+      <div id="successful-reg" style="display: none">
+        <h2>Ваша заявка на турнір прийнята та буде оброблена</h2>
+      </div>
+    </div>
+  </section>
+</main>
+<app-footer></app-footer>
+</body>
+
+</html>

@@ -23,4 +23,7 @@ public class TournamentService {
         repository.findAll().forEach(a -> tournamentDTOList.add(this.converter.ConvertToTournamentDTO(a)));
         return tournamentDTOList;
     }
+    public TournamentDTO findTournamentById(Long id){
+        return converter.ConvertToTournamentDTO(repository.findById(id).get());
+    }
 }

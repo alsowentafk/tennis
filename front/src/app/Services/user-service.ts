@@ -56,28 +56,32 @@ export class UserService {
     const endpoint = 'http://localhost:8080/api/user/getUser';
     return await this.httpClient.get<User>(endpoint, this.httpOptionsUser).toPromise();
   }
-  async findUserById(id: number) {
-    const endpoint = '/api/user/getUserById';
-    return await this.httpClient.get(endpoint, {params: {'id': String(id)}}).toPromise();
-  }
 
   async updateUser(user: User, fileToUpload: File) {
-    if (fileToUpload != null) {
-      const endpoint = 'http://localhost:8080/api/user/updateUserWithPhoto';
-      const formData: FormData = new FormData();
-      formData.append('file', fileToUpload);
-      formData.append('object', JSON.stringify(user));
-      this.httpClient
-        .put(endpoint, formData).subscribe((val) => {
-        console.log(val);
-      });
-    } else {
-      const endpoint = 'http://localhost:8080/api/user/updateUserWithOutPhoto';
-      this.httpClient
-        .put(endpoint, user).subscribe((val) => {
-        console.log(val);
-      });
-    }
-    return false;
+    const endpoint = 'http://localhost:8080/api/user/updateUser';
+    let options =  this.httpOptionsUser;
+    options.headers = new HttpHeaders({
+      'Authorization': 'Basic ' + btoa('Rp29K#jpM-TgZ8BCm5Ln5hGu7Q69My^UF2uR8LPz:6n!MYwMjrb+$r6d#qC!z9pL2zgqH-4rJMQsK4Bs7')
+    });
+    const formData: FormData = new FormData();
+    formData.append('file', fileToUpload);
+    formData.append('object', JSON.stringify(user));
+    return await this.httpClient.put(endpoint, formData, options).toPromise();
+  }
+  async findUserById(id: string): Promise<User> {
+    const endpoint = 'http://localhost:8080/api/user/getUserById';
+    return await this.httpClient.get<User>(endpoint, {params: {'id': id}}).toPromise();
+  }
+  async getUserPhoto(endpoint) {
+    return await this.httpClient.get(endpoint,{responseType: 'blob'}).toPromise();
+  }
+  async findAllPlayersByTournament(id: string): Promise<User[]> {
+    this.httpOptionsUser.params = new HttpParams().set('id', id);
+    const endpoint = 'http://localhost:8080/api/tournamentUser/findAllPlayersFromTournament';
+    return await this.httpClient.get<User[]>(endpoint, this.httpOptionsUser).toPromise();
+  }
+  async findAllPlayers(): Promise<User[]> {
+    const endpoint = 'http://localhost:8080/api/tournamentUser/findAllPlayers';
+    return await this.httpClient.get<User[]>(endpoint).toPromise();
   }
 }

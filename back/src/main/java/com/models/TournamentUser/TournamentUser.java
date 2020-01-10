@@ -25,4 +25,5 @@ public class TournamentUser {
     private User user_id;
     private String birth_certificate;
     private String pay_certificate;
+    private Boolean is_confirmed;
 }

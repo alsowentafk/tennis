@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<app-nav></app-nav>
+<body>
+<main class="page product-page" style="margin-top: 3%">
+  <section class="clean-block clean-product dark">
+    <div class="container">
+      <div class="block-heading">
+        <h2 class="text-info">Гравець</h2>
+      </div>
+      <div class="block-content">
+        <div class="product-info">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="gallery">
+                  <img class="img-fluid d-block mx-auto" [src]="getUserPhoto(userId)" alt="">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info">
+                <h3>{{user.first_name}} {{user.second_name}}</h3>
+                <div class="summary">
+                  <p>Електронна адреса - {{user.email}}</p>
+                  <p>Дата народження - {{user.birthday | date : 'mediumDate' : 'ru'}}</p>
+                  <p>Місто - {{user.city}}</p>
+                  <p>Робоча рука - {{user.hand}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center"><button class="btn btn-light btn-lg text-center text-sm-center text-md-center text-lg-center text-xl-center" type="button" style="background-color: #efe2ea;" routerLink="/players">Усі гравці</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+<app-nav></app-nav>
+</html>

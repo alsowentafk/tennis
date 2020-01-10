@@ -26,4 +26,8 @@ export class TournamentService {
     const endpoint = 'http://localhost:8080/api/tournament/getAllTournaments';
     return await this.httpClient.get<Tournament[]>(endpoint).toPromise();
   }
+  async findTournamentById(id: string): Promise<Tournament>{
+    const endpoint = 'http://localhost:8080/api/tournament/getTournamentById';
+    return await this.httpClient.get<Tournament>(endpoint,{params: {'id': String(id)}}).toPromise();
+  }
 }

@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="https://npmcdn.com/sweetalert2@4.0.15/dist/sweetalert2.min.css">
+
+<script src="https://npmcdn.com/sweetalert2@4.0.15/dist/sweetalert2.min.js"></script>
+<body>
+<app-nav></app-nav>
+<main class="page blog-post" style="margin-top: 3%">
+  <section class="clean-block clean-post dark">
+    <div class="container">
+      <div class="block-content">
+        <div class="post-image" style="background-image:url(assets/img/2656060-54943510-2560-1440.jpg);"></div>
+        <div class="post-body">
+          <div class="row" style="margin-bottom: 5%;">
+            <div *ngIf="tournament.date_start > getNow()" class="col-4 text-center"><button class="btn btn-outline-light btn-lg" style="background-color: rgba(9, 162, 255, 0.85);" type="button" (click)="registrationOnCurrentTournament()">Зареєструватись на турнір</button></div>
+            <div class="col-4 text-center"><button class="btn btn-outline-light btn-lg" style="background-color: rgba(9, 162, 255, 0.85);" type="button" routerLink="/tournaments" (click)="openPlayersFromCurrentTournament()">Список гравців турніру</button></div>
+            <div class="col-4 text-center"><button class="btn btn-outline-light btn-lg" style="background-color: rgba(9, 162, 255, 0.85);" type="button" routerLink="/games">Турнірна сітка</button></div>
+          </div>
+          <h3>{{tournament.name}}</h3>
+          <div class="post-info">
+            <p>Дата початку турніру: <span>{{tournament.date_start | date : 'mediumDate'}}</span></p>
+            <p>Дата закриття турніру:<span>{{tournament.date_close_reg | date : 'mediumDate'}}</span></p>
+            <p>Дата коли можливо відминити реєстрацію на турнір:<span>{{tournament.date_cancel_reg | date : 'mediumDate'}}</span></p>
+          </div>
+          <div style="text-align: center;"><h4>Регламент - {{tournament.name}}</h4></div>
+          <p>{{tournament.regulations}}</p>
+<!--          <div class="row">-->
+<!--            <div class="col">-->
+<!--              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis-->
+<!--                vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <h4>Lorem Ipsum dolor</h4>-->
+<!--          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae-->
+<!--            leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+<!--          <div class="row">-->
+<!--            <div class="col">-->
+<!--              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis-->
+<!--                vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+<!--            </div>-->
+<!--          </div>-->
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<app-footer></app-footer>
+</body>

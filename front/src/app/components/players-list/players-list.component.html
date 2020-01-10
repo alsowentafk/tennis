@@ -3,55 +3,26 @@
 
 <body>
 <app-nav></app-nav>
-<main class="page blog-post-list">
+<main class="page blog-post-list" style="margin-top: 3%">
   <section class="clean-block clean-blog-list dark">
     <div class="container">
       <div class="block-heading">
-        <h2 class="text-info">Список гравців</h2>
+        <h2 class="text-info">Список усіх гравців</h2>
       </div>
-      <div class="block-content">
+      <div class="block-content" *ngFor="let player of playersList | paginate: { itemsPerPage: 5, currentPage: p }">
         <div class="clean-blog-post">
           <div class="row">
-            <div class="col-lg-5"><img class="rounded img-fluid" src="../../../assets/img/tech/image4.jpg?h=0adc0de9a17a7caea6b8641f5d6ae02c" alt=""></div>
+            <div class="col-lg-5"><img class="rounded img-fluid" [src]="getUserPhoto(player.id)" alt=""></div>
             <div class="col-lg-7">
-              <h3>Lorem Ipsum dolor sit amet</h3>
-              <div class="info"><span class="text-muted">Jan 16, 2018 by&nbsp;<a href="#">John Smith</a></span></div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis
-                vitae leo.</p>
+              <h3>{{player.first_name}} {{player.second_name}}</h3>
+              <div class="info"><span class="text-muted">{{player.birthday | date: 'mediumDate'}}</span>
+                <div><button class="btn btn-outline-primary btn-sm" [routerLink]="['player', player.id]" type="button">Дізнатись про гравця</button></div>
             </div>
           </div>
         </div>
-        <div class="clean-blog-post">
-          <div class="row">
-            <div class="col-lg-5"><img class="rounded img-fluid" src="../../../assets/img/tech/image4.jpg?h=0adc0de9a17a7caea6b8641f5d6ae02c" alt=""></div>
-            <div class="col-lg-7">
-              <h3>Lorem Ipsum dolor sit amet</h3>
-              <div class="info"><span class="text-muted">Jan 16, 2018 by&nbsp;<a href="#">John Smith</a></span></div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis
-                vitae leo.</p><button class="btn btn-outline-primary btn-sm" type="button">Read More</button></div>
-          </div>
-        </div>
-        <div class="clean-blog-post">
-          <div class="row">
-            <div class="col-lg-5"><img class="rounded img-fluid" src="../../../assets/img/tech/image4.jpg?h=0adc0de9a17a7caea6b8641f5d6ae02c" alt=""></div>
-            <div class="col-lg-7">
-              <h3>Lorem Ipsum dolor sit amet</h3>
-              <div class="info"><span class="text-muted">Jan 16, 2018 by&nbsp;<a href="#">John Smith</a></span></div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis
-                vitae leo.</p><button class="btn btn-outline-primary btn-sm" type="button">Read More</button></div>
-          </div>
-        </div>
-        <div class="clean-blog-post">
-          <div class="row">
-            <div class="col-lg-5"><img class="rounded img-fluid" src="../../../assets/img/tech/image4.jpg?h=0adc0de9a17a7caea6b8641f5d6ae02c" alt=""></div>
-            <div class="col-lg-7">
-              <h3>Lorem Ipsum dolor sit amet</h3>
-              <div class="info"><span class="text-muted">Jan 16, 2018 by&nbsp;<a href="#">John Smith</a></span></div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis
-                vitae leo.</p><button class="btn btn-outline-primary btn-sm" type="button">Read More</button></div>
-          </div>
-        </div>
       </div>
+    </div>
+      <div style="text-align: center;"><pagination-controls (pageChange)="p = $event"></pagination-controls></div>
     </div>
   </section>
 </main>

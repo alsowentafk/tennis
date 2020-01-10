@@ -7,6 +7,11 @@ import {PlayersListComponent} from './components/players-list/players-list.compo
 import {SignUpComponent} from './components/sign-up/sign-up.component';
 import {TournamentsListComponent} from './components/tournaments-list/tournaments-list.component';
 import {NotFoundComponent} from './components/not-found/not-found.component';
+import {GamesComponent} from './components/games/games.component';
+import {PlayerPageComponent} from './components/player-page/player-page.component';
+import {TournamentPageComponent} from './components/tournament-page/tournament-page.component';
+import {RegistrationOnTournamentComponent} from './components/registration-on-tournament/registration-on-tournament.component';
+import {TournamentUsersListComponent} from './components/tournament-users-list/tournament-users-list.component';
 
 
 const appRoutes: Routes = [
@@ -16,7 +21,11 @@ const appRoutes: Routes = [
   {path: 'players', component: PlayersListComponent},
   {path: 'sign-up', component: SignUpComponent},
   {path: 'tournaments', component: TournamentsListComponent},
-  // {path: 'account/:id', component: AccountComponent},
+  {path: 'games', component: GamesComponent},
+  {path: 'players/player/:id', component: PlayerPageComponent},
+  {path: 'tournaments/tournament/:id', component: TournamentPageComponent},
+  {path: 'tournament/players/:id', component: TournamentUsersListComponent},
+  {path: 'reg/:id', component: RegistrationOnTournamentComponent},
   {path: '**', component: NotFoundComponent}
 ];
 

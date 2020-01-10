@@ -56,7 +56,7 @@ public class UserService  {
         User user = repository.findByEmailIgnoreCase(email);
         return user != null;
     }
-    public void update(UserDTO userDTO) {
+    public UserDTO update(UserDTO userDTO) {
         UserDTO temp = converter.ConvertToUserDTO(repository.findById(userDTO.getId()).get());
         temp.setEmail(userDTO.getEmail());
         temp.setIs_confirmed(userDTO.getIs_confirmed());
@@ -68,7 +68,7 @@ public class UserService  {
         temp.setBirthday(userDTO.getBirthday());
         temp.setCity(userDTO.getCity());
         temp.setHand(userDTO.getHand());
-        repository.save(converter.ConvertToUser(temp));
+        return converter.ConvertToUserDTO(repository.save(converter.ConvertToUser(temp)));
     }
 
     public List<UserDTO> getAllUsers() {

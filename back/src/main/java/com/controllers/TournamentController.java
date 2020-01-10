@@ -11,10 +11,7 @@ import com.transoformers.TournamentTournamentDTO;
 import com.transoformers.UserUserDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -31,5 +28,9 @@ public class TournamentController {
     @GetMapping("/getAllTournaments")
     public List<TournamentDTO> findAllTournaments(){
         return tournamentService.findAllTournaments();
+    }
+    @GetMapping("/getTournamentById")
+    public TournamentDTO findTournamentById(@RequestParam String id){
+        return tournamentService.findTournamentById(Long.valueOf(id));
     }
 }

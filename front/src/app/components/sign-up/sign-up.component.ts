@@ -59,6 +59,8 @@ export class SignUpComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     this.submitted = false;
     this.registerForm.reset();
+    this.confirmationForm_submitted = false;
+    this.confirmationForm.reset();
   }
 
   onSubmit() {

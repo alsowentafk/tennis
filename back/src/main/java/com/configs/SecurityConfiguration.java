@@ -35,6 +35,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.GET, "/api/user/login").permitAll()
                 .antMatchers(HttpMethod.GET, "/api/user/getUser").hasRole("USER")
                 .antMatchers(HttpMethod.GET, "/api/tournament/getAllTournaments").permitAll()
+                .antMatchers(HttpMethod.GET, "/api/tournament/getTournamentById").permitAll()
+                .antMatchers(HttpMethod.GET, "/api/user/updateUser").hasRole("USER")
+                .antMatchers(HttpMethod.GET, "/api/tournamentUser/regUserOnTournament").hasRole("USER")
+                .antMatchers(HttpMethod.GET, "/api/tournamentUser/findAllPlayers").permitAll()
+                .antMatchers(HttpMethod.GET, "/api/tournamentUser/findAllPlayersFromTournament").permitAll()
                 .and()
                 .csrf().disable();
     }

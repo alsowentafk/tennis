@@ -3,7 +3,7 @@
 
 <body>
 <app-nav></app-nav>
-<main class="page service-page">
+<main class="page service-page" style="margin-top: 3%">
   <section class="clean-block clean-services dark">
     <div class="container">
       <div class="block-heading">
@@ -16,7 +16,7 @@
               <h4 class="card-title">{{tournament.name}} = {{tournament.id}}</h4>
               <p class="card-text">Початок турніру: {{tournament.date_start | date }}</p>
             </div>
-            <div><button class="btn btn-outline-primary btn-sm" type="button">Learn More</button></div>
+            <div><button class="btn btn-outline-primary btn-sm" [routerLink]="['tournament', tournament.id]" type="button">Дізнатись більше</button></div>
           </div>
         </div>
       </div>
