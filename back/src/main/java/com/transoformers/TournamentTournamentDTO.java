@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class TournamentTournamentDTO {
 
-    public Tournament ConvertToTournament(Tournament tournamentDTO) {
+    public Tournament ConvertToTournament(TournamentDTO tournamentDTO) {
         Tournament tournament = new Tournament();
         tournament.setId(tournamentDTO.getId());
         tournament.setName(tournamentDTO.getName());
@@ -15,6 +15,7 @@ public class TournamentTournamentDTO {
         tournament.setDate_start(tournamentDTO.getDate_start());
         tournament.setDate_close_reg(tournamentDTO.getDate_close_reg());
         tournament.setDate_cancel_reg(tournamentDTO.getDate_cancel_reg());
+        tournament.setResults(tournamentDTO.getResults());
         return tournament;
     }
 
@@ -26,6 +27,7 @@ public class TournamentTournamentDTO {
         tournamentDTO.setDate_start(tournament.getDate_start());
         tournamentDTO.setDate_cancel_reg(tournament.getDate_cancel_reg());
         tournamentDTO.setDate_close_reg(tournament.getDate_close_reg());
+        tournamentDTO.setResults(tournament.getResults());
         return tournamentDTO;
     }
 }

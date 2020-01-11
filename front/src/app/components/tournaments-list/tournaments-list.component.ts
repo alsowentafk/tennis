@@ -9,6 +9,7 @@ import {Tournament} from '../../Models/Tournament';
 })
 export class TournamentsListComponent implements OnInit {
   tournamentsList: Tournament[] = [];
+  searchTournamentString = '';
   p: number = 1;
   constructor(private tournamentService: TournamentService) { }
 
@@ -17,5 +18,4 @@ export class TournamentsListComponent implements OnInit {
       this.tournamentsList = tournamentsList;
     })
   }
-
 }

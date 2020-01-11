@@ -4,6 +4,7 @@ import {User} from '../../Models/User';
 import {MustMatch} from '../../Validators/MustMatch';
 import {Response} from '../../Responses/Response';
 import {UserService} from '../../Services/user-service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-sign-up',
@@ -24,7 +25,7 @@ export class SignUpComponent implements OnInit, OnDestroy {
   previewUrl: any = '//placehold.it/150';
   loading_reg: boolean = false;
   loading_confirm: boolean = false;
-  constructor(private userService: UserService,private formBuilder: FormBuilder) { }
+  constructor(private userService: UserService,private formBuilder: FormBuilder, private router: Router) { }
 
   get f() {
     return this.registerForm.controls;
@@ -84,7 +85,6 @@ export class SignUpComponent implements OnInit, OnDestroy {
         this.registerForm.reset();
          document.getElementById('reg_form').style.display = 'none';
          document.getElementById('after_reg_form').style.display = 'block';
-
       }
     });
   }

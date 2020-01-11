@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<app-nav></app-nav>
+
+<div class="contact-clean">
+  <div  id="reg_form">
+    <form (ngSubmit)='onSubmit()' [formGroup]="tournamentForm" method="POST" name="f">
+      <h2 class="text-center">Редагування турніру</h2>
+      <div class="form-group">
+        <label class="control-label" for="name">Назва:</label>
+        <input [ngClass]="{ 'is-invalid': submitted && f.name.errors}" class="form-control"
+               formControlName="name"
+               id="name"
+               name="name" placeholder="G - 2012" [value]="tournament.name" type="text">
+        <div *ngIf="(f.name.errors && (f.name.dirty)) || (submitted && f.name.errors)"
+             class="text-danger">
+          <div *ngIf="f.name.errors.required">
+            Назва є обовязкова.
+          </div>
+          <div *ngIf="f.name.errors.maxlength">
+            Занадто довге.
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label" for="date_start">Дата початку турніру:</label>
+        <input [ngClass]="{ 'is-invalid': submitted && f.date_start.errors}" class="form-control"
+               formControlName="date_start"
+               id="date_start"
+               name="date_start" type="date">
+        <div *ngIf="(f.date_start.errors && (f.date_start.dirty)) || (submitted && f.date_start.errors)"
+             class="text-danger">
+          <div *ngIf="f.date_start.errors.required">
+            Поле є обов'язковим.
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label" for="date_close_reg">Дата закінчення  реєстрації:</label>
+        <input [ngClass]="{ 'is-invalid': submitted && f.date_close_reg.errors}" class="form-control"
+               formControlName="date_close_reg"
+               id="date_close_reg"
+               name="date_close_reg" type="date">
+        <div *ngIf="(f.date_close_reg.errors && (f.date_close_reg.dirty)) || (submitted && f.date_close_reg.errors)"
+             class="text-danger">
+          <div *ngIf="f.date_close_reg.errors.required">
+            Поле є обов'язковим.
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label" for="date_cancel_reg">Крайня дата відміни заявки:</label>
+        <input [ngClass]="{ 'is-invalid': submitted && f.date_cancel_reg.errors}" class="form-control"
+               formControlName="date_cancel_reg"
+               id="date_cancel_reg"
+               name="date_cancel_reg" type="date">
+        <div *ngIf="(f.date_cancel_reg.errors && (f.date_cancel_reg.dirty)) || (submitted && f.date_cancel_reg.errors)"
+             class="text-danger">
+          <div *ngIf="f.date_cancel_reg.errors.required">
+            Поле є обов'язковим.
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label" for="regulations">Вставте регламент:</label>
+        <textarea [ngClass]="{ 'is-invalid': submitted && f.regulations.errors}" class="form-control"
+                  formControlName="regulations"
+                  id="regulations"
+                  name="regulations" placeholder="G - 2012 regulations" [value]="tournament.regulations" type="text"></textarea>
+        <div *ngIf="(f.regulations.errors && (f.regulations.dirty)) || (submitted && f.regulations.errors)"
+             class="text-danger">
+          <div *ngIf="f.regulations.errors.required">
+            Регламент є обовязковим.
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label" for="results">Вставте результат:</label>
+        <textarea [ngClass]="{ 'is-invalid': submitted && f.results.errors}" class="form-control"
+                  formControlName="results"
+                  id="results"
+                  name="results" placeholder="Результат" [value]="tournament.results" type="text"></textarea>
+      </div>
+      <div class="form-group text-center"><button class="btn btn-primary text-center" type="submit">Редагувати</button> </div> </form>
+      <div class="form-group text-center"><button class="btn text-center" style="background-color: red; color: white" (click)="delete()">Видалити</button></div>
+
+  </div>
+  <div id="successful-reg" style="display: none; text-align: center">
+    <h2 class="text-info">Турнір успішно відредаговано</h2>
+  </div>
+</div>
+<app-footer></app-footer>
+
+</html>
+
+

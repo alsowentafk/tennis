@@ -6,6 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 
 import java.math.BigInteger;
+import java.util.List;
 
 public interface TournamentUserRepository extends CrudRepository<TournamentUser, Long> {
     @Query(nativeQuery = true, value = "SELECT EXISTS(SELECT * FROM tournament_user WHERE user_id = :user_id AND tournament_id = :tournament_id);")
@@ -14,4 +15,6 @@ public interface TournamentUserRepository extends CrudRepository<TournamentUser,
     Iterable<BigInteger> findAllUsers();
     @Query(nativeQuery = true, value = "SELECT tournament_user.user_id FROM tournament_user WHERE tournament_id = :tournament_id")
     Iterable<BigInteger> findAllUsersFromTournament(@Param("tournament_id") Long tournament_id);
+    @Query(nativeQuery = true, value = "SELECT * FROM tournament_user WHERE is_confirmed = false;")
+    List<TournamentUser> findAllUnConfirmed();
 }

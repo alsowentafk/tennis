@@ -39,4 +39,27 @@ export class TournamentUserService {
     formData.append('object', JSON.stringify(tournamentUser));
     return await this.httpClient.post<TournamentUser>(endpoint, formData, this.httpOptionsUser).toPromise();
   }
+  async getAll(): Promise<TournamentUser[]>{
+    const endpoint = 'http://localhost:8080/api/tournamentUser/getAll';
+    return await this.httpClient.get<TournamentUser[]>(endpoint, this.httpOptionsAdmin).toPromise();
+  }
+  async getById(id: string): Promise<TournamentUser>{
+    const endpoint = 'http://localhost:8080/api/tournamentUser/getRequestById';
+    let options = this.httpOptionsAdmin;
+    options.params = new HttpParams().set('id', id);
+    return await this.httpClient.get<TournamentUser>(endpoint, options).toPromise();
+  }
+  async confirm(id: string){
+    const endpoint = 'http://localhost:8080/api/tournamentUser/confirm';
+    let options = this.httpOptionsAdmin;
+    options.params = new HttpParams().set('id', id);
+    return await this.httpClient.put<TournamentUser>(endpoint, {}, options).toPromise();
+  }
+
+  async delete(id: string){
+    const endpoint = 'http://localhost:8080/api/tournamentUser/delete';
+    let options = this.httpOptionsAdmin;
+    options.params = new HttpParams().set('id', id);
+    return await this.httpClient.delete(endpoint, options).toPromise();
+  }
 }

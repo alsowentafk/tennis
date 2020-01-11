@@ -21,4 +21,5 @@ public class Tournament {
     private Date date_start;
     private Date date_close_reg;
     private Date date_cancel_reg;
+    private String results;
 }

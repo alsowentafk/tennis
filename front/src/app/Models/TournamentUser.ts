@@ -1,12 +1,15 @@
+import {Tournament} from './Tournament';
+import {User} from './User';
+
 export class TournamentUser {
     id: number;
-    tournament_id: number;
-    user_id: number;
-    birth_certificate: number;
-    pay_certificate: number;
-    is_confirmed: boolean
+    tournament_id: Tournament;
+    user_id: User;
+    birth_certificate: string;
+    pay_certificate: string;
+    is_confirmed: boolean;
 
-  constructor(birth_certificate: number, pay_certificate: number) {
+  constructor(birth_certificate: string, pay_certificate: string) {
     this.birth_certificate = birth_certificate;
     this.pay_certificate = pay_certificate;
   }

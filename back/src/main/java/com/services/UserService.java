@@ -82,8 +82,6 @@ public class UserService  {
         return user != null ? converter.ConvertToUserDTO(user) : null;
     }
 
-
-
     public void delete(Long id) {
         repository.deleteById(id);
     }

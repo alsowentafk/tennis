@@ -33,4 +33,16 @@ public class TournamentController {
     public TournamentDTO findTournamentById(@RequestParam String id){
         return tournamentService.findTournamentById(Long.valueOf(id));
     }
+    @PostMapping("/addTournament")
+    public TournamentDTO addTournament(@RequestBody TournamentDTO tournamentDTO){
+        return tournamentService.addTournament(tournamentDTO);
+    }
+    @PutMapping("/updateTournament")
+    public TournamentDTO updateTournament(@RequestBody TournamentDTO tournamentDTO){
+        return tournamentService.update(tournamentDTO);
+    }
+    @DeleteMapping("/delete")
+    public void delete(@RequestParam String id){
+        tournamentService.delete(Long.valueOf(id));
+    }
 }

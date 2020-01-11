@@ -30,4 +30,5 @@ public class TournamentDTO {
     @NotNull
     @NotEmpty
     private Date date_cancel_reg;
+    private String results;
 }

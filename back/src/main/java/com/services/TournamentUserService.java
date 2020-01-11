@@ -45,4 +45,20 @@ public class TournamentUserService {
         temp.forEach(a -> userIds.add(a.longValue()));
         return userRepository.findAllById(userIds);
     }
+    public List<TournamentUserDTO> getAll(){
+        List<TournamentUserDTO> tournamentUserDTOS = new ArrayList<TournamentUserDTO>();
+        repository.findAllUnConfirmed().forEach(a -> tournamentUserDTOS.add(converter.ConvertToTournamentUserDTO(a)));
+        return tournamentUserDTOS;
+    }
+    public TournamentUserDTO getTournamentUserById(Long id){
+        return converter.ConvertToTournamentUserDTO(repository.findById(id).get());
+    }
+    public void deleteTournamentUser(Long id){
+        repository.deleteById(id);
+    }
+    public TournamentUserDTO confirm(Long id){
+        TournamentUser tournamentUser =  repository.findById(id).get();
+        tournamentUser.setIs_confirmed(true);
+        return converter.ConvertToTournamentUserDTO(repository.save(tournamentUser));
+    }
 }

@@ -19,10 +19,16 @@ import com.transoformers.TournamentUserTournamentUserDTO;
 import com.transoformers.UserUserDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.core.io.Resource;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Objects;
@@ -68,5 +74,61 @@ public class TournamentUserController {
     public Iterable<User> findAllPlayersFromTournament(@RequestParam String id)
     {
         return tournamentUserService.findAllUsersFromTournament(Long.valueOf(id));
+    }
+    @GetMapping("/getAll")
+    public List<TournamentUserDTO> getAll(){
+        return tournamentUserService.getAll();
+    }
+    @GetMapping("/getRequestById")
+    public TournamentUserDTO getRequestById(@RequestParam String id){
+        return tournamentUserService.getTournamentUserById(Long.valueOf(id));
+    }
+    @DeleteMapping("/delete")
+    public void delete(@RequestParam String id){
+         tournamentUserService.deleteTournamentUser(Long.valueOf(id));
+    }
+    @GetMapping("/downloadFileBirth/{id}")
+    public ResponseEntity<Resource> downloadFileBirth(@PathVariable Long id, HttpServletRequest request) {
+        String fileName = tournamentUserService.getTournamentUserById(id).getBirth_certificate();
+        Resource resource = fileStorageService.loadFileAsResourse(fileName);
+        String contentType;
+        try {
+            contentType = request.getServletContext().getMimeType(resource.getFile().getAbsolutePath());
+        } catch (IOException ex) {
+            log.info("Could not determine file type." + fileName + ex);
+            throw new RuntimeException(ex.getMessage());
+        }
+
+        if (contentType == null) {
+            contentType = "application/octet-stream";
+        }
+        log.info("File downloaded successful" + fileName);
+        return ResponseEntity.ok().contentType(MediaType.parseMediaType(contentType))
+                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + resource.getFilename() + "\"")
+                .body(resource);
+    }
+    @GetMapping("/downloadFilePay/{id}")
+    public ResponseEntity<Resource> downloadFilePay(@PathVariable Long id, HttpServletRequest request) {
+        String fileName = tournamentUserService.getTournamentUserById(id).getPay_certificate();
+        Resource resource = fileStorageService.loadFileAsResourse(fileName);
+        String contentType;
+        try {
+            contentType = request.getServletContext().getMimeType(resource.getFile().getAbsolutePath());
+        } catch (IOException ex) {
+            log.info("Could not determine file type." + fileName + ex);
+            throw new RuntimeException(ex.getMessage());
+        }
+
+        if (contentType == null) {
+            contentType = "application/octet-stream";
+        }
+        log.info("File downloaded successful" + fileName);
+        return ResponseEntity.ok().contentType(MediaType.parseMediaType(contentType))
+                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + resource.getFilename() + "\"")
+                .body(resource);
+    }
+    @PutMapping("/confirm")
+    public TournamentUserDTO confirmAcc (@RequestParam String id){
+        return tournamentUserService.confirm(Long.valueOf(id));
     }
 }

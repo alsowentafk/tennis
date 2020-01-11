@@ -5,6 +5,7 @@ export class Tournament {
   date_start: Date;
   date_close_reg: Date;
   date_cancel_reg: Date;
+  results: string;
 
   constructor(name: string, regulations: string, date_start: Date, date_close_reg: Date, date_cancel_reg: Date) {
     this.name = name;

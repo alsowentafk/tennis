@@ -84,4 +84,14 @@ export class UserService {
     const endpoint = 'http://localhost:8080/api/tournamentUser/findAllPlayers';
     return await this.httpClient.get<User[]>(endpoint).toPromise();
   }
+  async findAll(): Promise<User[]> {
+    const endpoint = 'http://localhost:8080/api/user/findAll';
+    return await this.httpClient.get<User[]>(endpoint, this.httpOptionsAdmin).toPromise();
+  }
+  async delete(id: string){
+    const endpoint = 'http://localhost:8080/api/user/delete';
+    let options = this.httpOptionsAdmin;
+    options.params = new HttpParams().set('id', id);
+    return await this.httpClient.delete(endpoint, options).toPromise();
+  }
 }

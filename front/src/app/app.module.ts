@@ -27,6 +27,17 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import {registerLocaleData} from '@angular/common';
 import localeUa from '@angular/common/locales/ru';
 import { TournamentUsersListComponent } from './components/tournament-users-list/tournament-users-list.component';
+import { AdminPanelComponent } from './components/admin-panel/admin-panel.component';
+import { AddTournamentComponent } from './components/admin-panel/add-tournament/add-tournament.component';
+import { EditTournamentListComponent } from './components/admin-panel/edit-tournament-list/edit-tournament-list.component';
+import {TournamentSearchFilterPipe} from './Pipes/TournamentSearchFilterPipe';
+import { EditTournamentComponent } from './components/admin-panel/edit-tournament/edit-tournament.component';
+import { EditUsersListComponent } from './components/admin-panel/edit-users-list/edit-users-list.component';
+import {PlayerSearchFilterPipe} from './Pipes/PlayerSearchFilterPipe';
+import { EditUserComponent } from './components/admin-panel/edit-user/edit-user.component';
+import { EditRequestsListComponent } from './components/admin-panel/edit-requests-list/edit-requests-list.component';
+import { EditRequestComponent } from './components/admin-panel/edit-request/edit-request.component';
+import {RequestSearchFilterPipe} from './Pipes/RequestSearchFilterPipe';
 
 registerLocaleData(localeUa, 'ua');
 @NgModule({
@@ -46,7 +57,18 @@ registerLocaleData(localeUa, 'ua');
     PlayerPageComponent,
     TournamentPageComponent,
     RegistrationOnTournamentComponent,
-    TournamentUsersListComponent
+    TournamentUsersListComponent,
+    AdminPanelComponent,
+    AddTournamentComponent,
+    EditTournamentListComponent,
+    TournamentSearchFilterPipe,
+    EditTournamentComponent,
+    EditUsersListComponent,
+    PlayerSearchFilterPipe,
+    EditUserComponent,
+    EditRequestsListComponent,
+    EditRequestComponent,
+    RequestSearchFilterPipe
   ],
   imports: [
     BrowserModule,

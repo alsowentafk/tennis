@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
 import {Tournament} from '../Models/Tournament';
 
 @Injectable({
@@ -29,5 +29,21 @@ export class TournamentService {
   async findTournamentById(id: string): Promise<Tournament>{
     const endpoint = 'http://localhost:8080/api/tournament/getTournamentById';
     return await this.httpClient.get<Tournament>(endpoint,{params: {'id': String(id)}}).toPromise();
+  }
+  async addTournament(tournament: Tournament): Promise<Tournament>{
+    const endpoint = 'http://localhost:8080/api/tournament/addTournament';
+    return await this.httpClient.post<Tournament>(endpoint, tournament, this.httpOptionsAdmin).toPromise();
+  }
+
+  async updateTournament(tournament: Tournament): Promise<Tournament>{
+    const endpoint = 'http://localhost:8080/api/tournament/updateTournament';
+    return await this.httpClient.put<Tournament>(endpoint, tournament, this.httpOptionsAdmin).toPromise();
+  }
+
+  async delete(id: string){
+    const endpoint = 'http://localhost:8080/api/tournament/delete';
+    let options = this.httpOptionsAdmin;
+    options.params = new HttpParams().set('id', id);
+    return await this.httpClient.delete(endpoint, options).toPromise();
   }
 }

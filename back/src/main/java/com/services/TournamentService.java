@@ -26,4 +26,20 @@ public class TournamentService {
     public TournamentDTO findTournamentById(Long id){
         return converter.ConvertToTournamentDTO(repository.findById(id).get());
     }
+    public TournamentDTO addTournament(TournamentDTO tournamentDTO){
+        return converter.ConvertToTournamentDTO(repository.save(converter.ConvertToTournament(tournamentDTO)));
+    }
+    public TournamentDTO update(TournamentDTO tournamentDTO) {
+        TournamentDTO temp = converter.ConvertToTournamentDTO(repository.findById(tournamentDTO.getId()).get());
+        temp.setName(tournamentDTO.getName());
+        temp.setResults(tournamentDTO.getResults());
+        temp.setDate_close_reg(tournamentDTO.getDate_close_reg());
+        temp.setDate_cancel_reg(tournamentDTO.getDate_cancel_reg());
+        temp.setDate_start(tournamentDTO.getDate_start());
+        temp.setRegulations(tournamentDTO.getRegulations());
+        return converter.ConvertToTournamentDTO(repository.save(converter.ConvertToTournament(temp)));
+    }
+    public void delete (Long id){
+        repository.deleteById(id);
+    }
 }

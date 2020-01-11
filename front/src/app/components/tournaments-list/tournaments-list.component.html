@@ -9,8 +9,11 @@
       <div class="block-heading">
         <h2 class="text-info">Турніри</h2>
       </div>
+      <div class="row" style="margin-bottom: 3%; margin-left: 10%">
+        Пошук <input style="margin-left: 1%;" class="form-control form-control-sm ml-15 w-75" type="text" placeholder="Search" aria-label="Search" name="inputSearch" [(ngModel)]="searchTournamentString"/>
+      </div>
       <div class="row">
-        <div class="col-md-6 col-lg-4" *ngFor="let tournament of tournamentsList | paginate: { itemsPerPage: 9, currentPage: p }">
+        <div class="col-md-6 col-lg-4" *ngFor="let tournament of tournamentsList | tournamentFilter:searchTournamentString | paginate: { itemsPerPage: 9, currentPage: p }">
           <div class="card">
             <div class="card-body">
               <h4 class="card-title">{{tournament.name}} = {{tournament.id}}</h4>

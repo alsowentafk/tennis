@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<app-nav></app-nav>
+<h2 class="text-center text-info" style="margin-top: 10%">Заявка - {{request.id}}</h2>
+<div class="newsletter-subscribe">
+  <div class="container">
+    <div id="reg_form">
+    <div class="intro">
+      <h2 class="text-center">Реєстрація на турнір - {{request.tournament_id.name}}</h2>
+      <h3 class="text-center">Учасник - {{request.user_id.first_name}} {{request.user_id.second_name}}</h3>
+      <h4 class="text-center">Дата кінця реєстрації на цей турнір: </h4>
+      <h3 class="text-center">{{request.tournament_id.date_close_reg | date: 'mediumDate'}}</h3>
+    </div>
+    <h4>Свідоцтво про народження</h4><img [src]="getRequestDate('Birth')" width="60%" height="60%" alt="">
+    <h4>Квитанція про &nbsp;оплату</h4><img [src]="getRequestDate('Pay')" width="60%" height="60%" alt="">
+    <form class="form-inline" method="post">
+        <button class="btn btn-primary" type="submit" (click)="submit()">Підтвердити </button>
+        <button class="btn" style="background-color: red; color: white; margin-left: 10%" type="submit" (click)="delete()">відхилити</button>
+    </form></div>
+    <div id="successful-reg" style="display: none; text-align: center">
+      <h2 class="text-info">Заявку успішно оброблено</h2>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+</body>
+
+</html>

@@ -12,7 +12,7 @@
           <div class="row" style="margin-bottom: 5%;">
             <div *ngIf="tournament.date_start > getNow()" class="col-4 text-center"><button class="btn btn-outline-light btn-lg" style="background-color: rgba(9, 162, 255, 0.85);" type="button" (click)="registrationOnCurrentTournament()">Зареєструватись на турнір</button></div>
             <div class="col-4 text-center"><button class="btn btn-outline-light btn-lg" style="background-color: rgba(9, 162, 255, 0.85);" type="button" routerLink="/tournaments" (click)="openPlayersFromCurrentTournament()">Список гравців турніру</button></div>
-            <div class="col-4 text-center"><button class="btn btn-outline-light btn-lg" style="background-color: rgba(9, 162, 255, 0.85);" type="button" routerLink="/games">Турнірна сітка</button></div>
+            <div class="col-4 text-center"><button class="btn btn-outline-light btn-lg" style="background-color: rgba(9, 162, 255, 0.85);" type="button" [routerLink]="['/tournaments/tournament/games',tournament.id]">Результати турніру</button></div>
           </div>
           <h3>{{tournament.name}}</h3>
           <div class="post-info">
@@ -21,7 +21,7 @@
             <p>Дата коли можливо відминити реєстрацію на турнір:<span>{{tournament.date_cancel_reg | date : 'mediumDate'}}</span></p>
           </div>
           <div style="text-align: center;"><h4>Регламент - {{tournament.name}}</h4></div>
-          <p>{{tournament.regulations}}</p>
+          <p></p><div [innerHTML]="tournament.regulations"></div>
 <!--          <div class="row">-->
 <!--            <div class="col">-->
 <!--              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis-->

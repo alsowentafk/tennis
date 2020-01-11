@@ -11,6 +11,7 @@ import {AppComponent} from '../../app.component';
 export class PlayersListComponent implements OnInit {
   playersList = [];
   p: number = 1;
+  searchString = '';
   constructor(private userService: UserService) { }
 
   ngOnInit() {

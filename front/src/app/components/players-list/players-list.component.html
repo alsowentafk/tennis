@@ -9,7 +9,10 @@
       <div class="block-heading">
         <h2 class="text-info">Список усіх гравців</h2>
       </div>
-      <div class="block-content" *ngFor="let player of playersList | paginate: { itemsPerPage: 5, currentPage: p }">
+      <div class="row" style="margin-bottom: 3%; margin-left: 10%">
+        Пошук за прізвищем<input style="margin-left: 1%;" class="form-control form-control-sm ml-15 w-75" type="text" placeholder="Search" aria-label="Search" name="inputSearch" [(ngModel)]="searchString"/>
+      </div>
+      <div class="block-content" *ngFor="let player of playersList | playerFilter:searchString | paginate: { itemsPerPage: 5, currentPage: p }">
         <div class="clean-blog-post">
           <div class="row">
             <div class="col-lg-5"><img class="rounded img-fluid" [src]="getUserPhoto(player.id)" alt=""></div>
