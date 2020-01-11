@@ -83,9 +83,6 @@ export class EditUserComponent implements OnInit, OnDestroy {
       this.registerForm.reset();
       document.getElementById('reg_form').style.display = 'none';
       document.getElementById('successful-reg').style.display = 'block';
-      setTimeout(()=>{
-        this.router.navigateByUrl('admin/players').then()
-      }, 2000)
       });
   }
 

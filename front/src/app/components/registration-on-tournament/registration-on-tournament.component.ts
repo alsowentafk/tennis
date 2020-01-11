@@ -86,20 +86,21 @@ export class RegistrationOnTournamentComponent implements OnInit, OnDestroy {
             this.submitted = false;
             this.loading_reg = false;
             this.registerForm.reset();
-            this.router.navigateByUrl('/').then();
-            Swal.fire({
+            this.router.navigateByUrl('/tournaments/tournament/'+ this.tournamentId).then(()=>{Swal.fire({
               icon: 'warning',
               title: 'Ви вже зареєстровані на цей турнір',
               position: 'center'
-            }).then();
+              }).then();
+            });
+          } else {
+            this.tournamentUser = tournamentUser;
+            this.submitted = false;
+            this.loading_reg = false;
+            this.registerForm.reset();
+            document.getElementById('reg_form').style.display = 'none';
+            document.getElementById('successful-reg').style.display = 'block';
           }
-           this.tournamentUser = tournamentUser;
         });
-         this.submitted = false;
-         this.loading_reg = false;
-         this.registerForm.reset();
-         document.getElementById('reg_form').style.display = 'none';
-         document.getElementById('successful-reg').style.display = 'block';
     });
   }
 

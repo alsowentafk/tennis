@@ -1,4 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body class="text-center">
 <app-nav></app-nav>
-<p></p><div [innerHTML]="tournament.regulations"></div>
+<!-- Start: Navigation with Button -->
+<div>
+  <h2 class="text-info">Панель адміністратора</h2>
+</div>
+<div>
+  <div class="container">
+    <p></p><div [innerHTML]="tournament.results" *ngIf="tournament.results !== null"></div>
+    <div *ngIf="tournament.results === null" style="text-align: center; margin-top: 20%">
+      <h2 class="text-info">Ще немає результатів турніру</h2>
+    </div>
+  </div>
+</div>
 <app-footer></app-footer>
+</body>
+</html>
+
 

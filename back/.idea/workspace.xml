@@ -2,88 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94eca662-55f8-4724-ad47-ba18f997a4b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/Pipes/PlayerSearchFilterPipe.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/Pipes/RequestSearchFilterPipe.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/Pipes/TournamentSearchFilterPipe.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/components/admin-panel/edit-tournament-list/edit-tournament-list.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/components/admin-panel/edit-tournament-list/edit-tournament-list.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/components/admin-panel/edit-tournament-list/edit-tournament-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/components/admin-panel/edit-users-list/edit-users-list.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/components/admin-panel/edit-users-list/edit-users-list.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/components/admin-panel/edit-users-list/edit-users-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/assets/css/Newsletter-Subscription-Form.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/assets/img/00000.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templete2/assets/css/Contact-Form-Clean.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templete2/assets/css/Navigation-with-Button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templete2/assets/js/bs-animation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/UserImages/blob" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/UserImages/muscle_cars_dodge_dodge_charger_avto_stilnyy_83882_2560x1600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/configs/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/configs/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/ArticleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/TournamentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/TournamentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/TournamentUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/TournamentUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/models/Article/Article.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/models/Article/ArticleDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/models/Tournament/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/models/Tournament/Tournament.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/models/Tournament/TournamentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/models/Tournament/TournamentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/repositorys/ArticleRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/114-1149847_avatar-unknown-dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/508b3e5a-801a-4fd4-ba79-91948b364f34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/Adolfo-Moreno-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/bmw_m3_e92_belyj_96290_2560x1600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/cec99bc2-48a0-4e7f-a785-9b2925bc941fjpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/porsche_911_turbo_997_black_front_porshe_chyornyj_solntse_gazon_bliki_94733_2560x1600.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/repositorys/TournamentUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/repositorys/TournamentUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/services/ArticleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/services/FileStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/services/FileStorageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/services/TournamentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/services/TournamentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/services/TournamentUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/services/TournamentUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/transoformers/ArticleArticleDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/transoformers/TournamentTournamentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/transoformers/TournamentTournamentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/transoformers/TournamentUserTournamentUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/transoformers/TournamentUserTournamentUserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/configs/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/configs/SecurityConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controllers/ArticleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controllers/TournamentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controllers/TournamentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controllers/TournamentUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controllers/TournamentUserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controllers/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/models/Article/Article.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/models/Article/ArticleDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/models/Tournament/Tournament.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/models/Tournament/Tournament.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/models/Tournament/TournamentDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/models/Tournament/TournamentDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/repositorys/ArticleRepository.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/repositorys/TournamentUserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/repositorys/TournamentUserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/services/ArticleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/services/FileStorageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/services/FileStorageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/services/TournamentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/services/TournamentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/services/TournamentUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/services/TournamentUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/transoformers/ArticleArticleDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/transoformers/TournamentTournamentDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/transoformers/TournamentTournamentDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/transoformers/TournamentUserTournamentUserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/transoformers/TournamentUserTournamentUserDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/Models/Tournament.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/Models/Tournament.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/Models/TournamentUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/Models/TournamentUser.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/Services/tournament-user-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/Services/tournament-user-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/Services/tournament.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/Services/tournament.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/Services/user-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/Services/user-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/about-us/about-us.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/about-us/about-us.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/about-us/about-us.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/about-us/about-us.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/components/admin-panel/add-tournament/add-tournament.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/admin-panel/add-tournament/add-tournament.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front/src/app/components/games/games.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/games/games.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front/src/app/components/games/games.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/games/games.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/index/index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/index/index.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/nav/nav.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/nav/nav.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/players-list/players-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/players-list/players-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/players-list/players-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/players-list/players-list.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front/src/app/components/sign-up/sign-up.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/sign-up/sign-up.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/tournament-page/tournament-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/tournament-page/tournament-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/tournaments-list/tournaments-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/tournaments-list/tournaments-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/tournaments-list/tournaments-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/tournaments-list/tournaments-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templete2/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/../templete2/games.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templete2/player-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../templete2/player-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templete2/tennis.bsdesign" beforeDir="false" afterPath="$PROJECT_DIR$/../templete2/tennis.bsdesign" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templete2/tournament-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../templete2/tournament-page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,26 +93,26 @@
     </state>
     <state x="458" y="191" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.828@0.23.1440.828" timestamp="1578150683881" />
     <state x="458" y="191" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.829@0.23.1440.829" timestamp="1578699304792" />
-    <state width="1398" height="161" key="GridCell.Tab.0.bottom" timestamp="1578702305879">
+    <state width="1398" height="95" key="GridCell.Tab.0.bottom" timestamp="1578753853368">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state width="1398" height="331" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1578488432725" />
-    <state width="1398" height="161" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1578702305879" />
-    <state width="1398" height="161" key="GridCell.Tab.0.center" timestamp="1578702305878">
+    <state width="1398" height="95" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1578753853368" />
+    <state width="1398" height="95" key="GridCell.Tab.0.center" timestamp="1578753853366">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state width="1398" height="331" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1578488432724" />
-    <state width="1398" height="161" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1578702305878" />
-    <state width="1398" height="161" key="GridCell.Tab.0.left" timestamp="1578702305878">
+    <state width="1398" height="95" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1578753853366" />
+    <state width="1398" height="95" key="GridCell.Tab.0.left" timestamp="1578753853366">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state width="1398" height="331" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1578488432723" />
-    <state width="1398" height="161" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1578702305878" />
-    <state width="1398" height="161" key="GridCell.Tab.0.right" timestamp="1578702305879">
+    <state width="1398" height="95" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1578753853366" />
+    <state width="1398" height="95" key="GridCell.Tab.0.right" timestamp="1578753853367">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state width="1398" height="331" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1578488432724" />
-    <state width="1398" height="161" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1578702305879" />
+    <state width="1398" height="95" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1578753853367" />
     <state x="258" y="99" key="Maven.ArtifactSearchDialog" timestamp="1578175559048">
       <screen x="0" y="23" width="1440" height="828" />
     </state>

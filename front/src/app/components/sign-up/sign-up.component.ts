@@ -5,6 +5,8 @@ import {MustMatch} from '../../Validators/MustMatch';
 import {Response} from '../../Responses/Response';
 import {UserService} from '../../Services/user-service';
 import {Router} from '@angular/router';
+import * as uuid from 'uuid';
+import path from 'path'
 
 @Component({
   selector: 'app-sign-up',
@@ -70,10 +72,14 @@ export class SignUpComponent implements OnInit, OnDestroy {
       return;
     }
     this.loading_reg = true;
-    this.user = new User(this.registerForm.value.email,  this.registerForm.value.pass1, this.registerForm.value.image
+    const fileName = uuid.v4().toString();
+    const fileExt = path.extname(this.fileToUpload.name);
+    const fullFileName = fileName + fileExt;
+    const newFile: File = new File([this.fileToUpload], fullFileName, {type: this.fileToUpload.type});
+    this.user = new User(this.registerForm.value.email,  this.registerForm.value.pass1, newFile.name
       , this.registerForm.value.firstName, this.registerForm.value.secondName, this.registerForm.value.surname
       , this.registerForm.value.birthday, this.registerForm.value.city, this.registerForm.value.hand);
-    this.userService.registerNewUser(this.user, this.fileToUpload).then((response: Response) => {
+    this.userService.registerNewUser(this.user, newFile).then((response: Response) => {
       if (response.status === 500 && response.message === 'Account already exists') {
         this.EmailExist = true;
         this.loading_reg = false;

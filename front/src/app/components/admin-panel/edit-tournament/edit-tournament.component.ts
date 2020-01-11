@@ -61,9 +61,6 @@ export class EditTournamentComponent implements OnInit, OnDestroy {
          this.tournament = tourn;
          document.getElementById('reg_form').style.display = 'none';
          document.getElementById('successful-reg').style.display = 'block';
-         setTimeout(()=>{
-           this.router.navigateByUrl('/admin').then();
-         }, 2000)
        }
     });
   }

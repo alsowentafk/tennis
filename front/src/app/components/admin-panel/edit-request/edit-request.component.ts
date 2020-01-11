@@ -33,9 +33,6 @@ export class EditRequestComponent implements OnInit {
     this.tournamentUserService.delete(this.requestId).then(()  => {
         document.getElementById('reg_form').style.display = 'none';
         document.getElementById('successful-reg').style.display = 'block';
-        setTimeout(()=>{
-          this.router.navigateByUrl('/admin').then();
-        }, 2000)
     })
   }
 
@@ -48,9 +45,6 @@ export class EditRequestComponent implements OnInit {
         this.request = tournamentUser;
         document.getElementById('reg_form').style.display = 'none';
         document.getElementById('successful-reg').style.display = 'block';
-        setTimeout(()=>{
-          this.router.navigateByUrl('/admin').then();
-        }, 2000)
       }
     })
   }
