@@ -1,2 +1,2 @@
-FROM mysql:5.7
+FROM mysql
 ADD tennis.sql /docker-entrypoint-initdb.d/

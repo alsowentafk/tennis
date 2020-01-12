@@ -3,20 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="94eca662-55f8-4724-ad47-ba18f997a4b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/UserImages/114-1149847_avatar-unknown-dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/UserImages/508b3e5a-801a-4fd4-ba79-91948b364f34.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/UserImages/Adolfo-Moreno-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/UserImages/bmw_m3_e92_belyj_96290_2560x1600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/UserImages/cec99bc2-48a0-4e7f-a785-9b2925bc941fjpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/UserImages/porsche_911_turbo_997_black_front_porshe_chyornyj_solntse_gazon_bliki_94733_2560x1600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/repositorys/TournamentUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/repositorys/TournamentUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/repositorys/TournamentUserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/repositorys/TournamentUserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front/src/app/components/admin-panel/add-tournament/add-tournament.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/admin-panel/add-tournament/add-tournament.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/games/games.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/games/games.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/games/games.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/games/games.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/sign-up/sign-up.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/sign-up/sign-up.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
