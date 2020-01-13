@@ -19,6 +19,8 @@ services:
     networks: # Networks to join (Services on the same network can communicate with each other using their name)
       - backend
       - frontend
+    volumes: 
+      - /Users/also/Desktop/tennis/back/images:/Users/also/Desktop/tennis/back/images
 
   app-client:
     build:
