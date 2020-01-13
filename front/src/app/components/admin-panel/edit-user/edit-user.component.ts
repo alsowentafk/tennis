@@ -60,7 +60,7 @@ export class EditUserComponent implements OnInit, OnDestroy {
 
   onSubmit() {
     this.submitted = true;
-    if(this.user.image === '' || this.registerForm.value.image === ''){
+    if(this.user.image === '' && this.registerForm.value.image === ''){
       this.photoRequired = true;
       return;
     }

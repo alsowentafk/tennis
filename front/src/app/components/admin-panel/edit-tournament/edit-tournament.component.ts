@@ -53,7 +53,7 @@ export class EditTournamentComponent implements OnInit, OnDestroy {
     this.tournament.date_close_reg = (this.tournamentForm.value.date_close_reg != '') ? this.tournamentForm.value.date_close_reg : new Date(this.tournament.date_close_reg);
     this.tournament.date_cancel_reg = (this.tournamentForm.value.date_cancel_reg != '') ? this.tournamentForm.value.date_cancel_reg : new Date(this.tournament.date_cancel_reg);
     this.tournament.regulations = (this.tournamentForm.value.regulations != '') ? this.tournamentForm.value.regulations : this.tournament.regulations;
-    this.tournament.results = (this.tournamentForm.value.results != '') ? this.tournamentForm.value.results : this.tournament.results;
+    this.tournament.results = this.tournamentForm.value.results;
     this.tournamentService.updateTournament(this.tournament).then((tourn: Tournament) => {
        if(tourn === null){
         this.router.navigateByUrl('/admin/tournaments/edtTournament/'+this.tournament.id).then();

@@ -12,6 +12,7 @@ import {ActivatedRoute} from '@angular/router';
 export class TournamentUsersListComponent implements OnInit {
   tournamentId: string;
   playersList = [];
+  searchString: string = '';
   p: number = 1;
   constructor(private userService: UserService, private activatedRoute: ActivatedRoute) {
     this.tournamentId = this.activatedRoute.snapshot.paramMap.get('id');

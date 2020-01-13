@@ -16,7 +16,7 @@
         <div class="col-md-6 col-lg-4" *ngFor="let tournament of tournamentsList | tournamentFilter:searchTournamentString | paginate: { itemsPerPage: 9, currentPage: p }">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">{{tournament.name}} = {{tournament.id}}</h4>
+              <h4 class="card-title">{{tournament.name}}</h4>
               <p class="card-text">Початок турніру: {{tournament.date_start | date }}</p>
             </div>
             <div><button class="btn btn-outline-primary btn-sm" [routerLink]="['edtTournament', tournament.id]" type="button">Редагувати турнір</button></div>

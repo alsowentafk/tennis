@@ -11,7 +11,7 @@ export class PlayerSearchFilterPipe implements PipeTransform{
       return playerList;
     }
     return playerList.filter( player => {
-      return player.first_name.toLowerCase().indexOf(searchString.toLowerCase()) != -1;
+      return player.second_name.toLowerCase().indexOf(searchString.toLowerCase()) != -1;
     })
   }
 

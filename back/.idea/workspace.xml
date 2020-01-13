@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="94eca662-55f8-4724-ad47-ba18f997a4b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/admin-panel/add-tournament/add-tournament.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/admin-panel/add-tournament/add-tournament.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/blob" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/UserImages/blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/porsche_avto_gorod_zakat_83884_2560x1600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/sportkar_krasnyj_vid_szadi_118633_2560x1600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserImages/toyota_land_cruiser_prado_vid_sboku_108359_2560x1600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/configs/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/configs/WebConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,26 +84,26 @@
     </state>
     <state x="458" y="191" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.828@0.23.1440.828" timestamp="1578150683881" />
     <state x="458" y="191" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.829@0.23.1440.829" timestamp="1578699304792" />
-    <state width="1398" height="95" key="GridCell.Tab.0.bottom" timestamp="1578753853368">
+    <state width="1398" height="133" key="GridCell.Tab.0.bottom" timestamp="1578921363412">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state width="1398" height="331" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1578488432725" />
-    <state width="1398" height="95" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1578753853368" />
-    <state width="1398" height="95" key="GridCell.Tab.0.center" timestamp="1578753853366">
+    <state width="1398" height="133" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1578921363412" />
+    <state width="1398" height="133" key="GridCell.Tab.0.center" timestamp="1578921363411">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state width="1398" height="331" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1578488432724" />
-    <state width="1398" height="95" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1578753853366" />
-    <state width="1398" height="95" key="GridCell.Tab.0.left" timestamp="1578753853366">
+    <state width="1398" height="133" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1578921363411" />
+    <state width="1398" height="133" key="GridCell.Tab.0.left" timestamp="1578921363411">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state width="1398" height="331" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1578488432723" />
-    <state width="1398" height="95" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1578753853366" />
-    <state width="1398" height="95" key="GridCell.Tab.0.right" timestamp="1578753853367">
+    <state width="1398" height="133" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1578921363411" />
+    <state width="1398" height="133" key="GridCell.Tab.0.right" timestamp="1578921363412">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state width="1398" height="331" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1578488432724" />
-    <state width="1398" height="95" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1578753853367" />
+    <state width="1398" height="133" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1578921363412" />
     <state x="258" y="99" key="Maven.ArtifactSearchDialog" timestamp="1578175559048">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
