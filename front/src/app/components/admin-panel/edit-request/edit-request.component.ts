@@ -26,7 +26,7 @@ export class EditRequestComponent implements OnInit {
     })
   }
   getRequestDate(type: string){
-    return  'http://localhost:8080/api/tournamentUser/downloadFile'+ type + '/' + this.requestId;
+    return  '/api/tournamentUser/downloadFile'+ type + '/' + this.requestId;
   }
 
   delete() {

@@ -13,7 +13,7 @@ export class AppComponent {
   static admin = {email: 'admin@gmail.com', password: 'k2F-KywQq5*!w9K4', key: '8a2c169f-ef67-4a73-ae30-5b1e28bac920'};
 
   public static getPictureFromApi(controllerName: string, idEntity: string){
-    return  'http://localhost:8080/api/' + controllerName + '/downloadFile/' + idEntity;
+    return  '/api/' + controllerName + '/downloadFile/' + idEntity;
   }
 
   static blobToFile = (theBlob: Blob, fileName:string): File => {
