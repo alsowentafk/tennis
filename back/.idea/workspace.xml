@@ -2,66 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94eca662-55f8-4724-ad47-ba18f997a4b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../front/proxy.config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/UserImages/blob" beforeDir="false" afterPath="$PROJECT_DIR$/images/blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/UserImages/unknown.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/unknown.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/gm.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/configs/SecurityConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/configs/WebConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controllers/GameController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controllers/TournamentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controllers/TournamentGameController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controllers/TournamentUserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controllers/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/models/ConfirmationToken.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/models/Game/Game.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/models/Game/GameDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/models/LoginDataDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/models/Tournament/Tournament.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/models/Tournament/TournamentDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/models/TournamentGame/TournamentGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/models/TournamentGame/TournamentGameDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/models/TournamentUser/TournamentUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/models/TournamentUser/TournamentUserDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/models/User/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/models/User/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/models/User/UserDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/properties/FileStorageProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/repositorys/ConfirmationTokenRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/repositorys/GameRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/repositorys/TournamentGameRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/repositorys/TournamentRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/repositorys/TournamentUserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/repositorys/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/responses/UploadFileResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/responses/UserVerificationResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/services/ConfirmationTokenService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/services/EmailSenderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/services/FileStorageService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/services/GameService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/services/TournamentGameService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/services/TournamentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/services/TournamentUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/services/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/transoformers/GameGameDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/transoformers/TournamentGameTournamentGameDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/transoformers/TournamentTournamentDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/transoformers/TournamentUserTournamentUserDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/transoformers/UserUserDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gm-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gm-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.gm.UserMarketApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.gm.UserMarketApplicationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/gm/UserMarketApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/configs/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/configs/WebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/Services/tournament.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/Services/tournament.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
