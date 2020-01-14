@@ -20,7 +20,7 @@ services:
       - backend
       - frontend
     volumes: 
-      - /Users/also/Desktop/tennis/back/images:/Users/also/Desktop/tennis/back/images
+      - /root/tennis/back/images:/root/tennis/back/images
 
   app-client:
     build:
@@ -36,7 +36,7 @@ services:
       
   db:
     build: 
-      context: /Users/also/Desktop/tennis/db
+      context: /root/tennis/db
       dockerfile: Dockerfile
     restart: always  
     ports:  
