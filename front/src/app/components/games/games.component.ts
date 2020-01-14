@@ -19,7 +19,6 @@ export class GamesComponent implements OnInit {
   ngOnInit() {
     this.tournamentService.findTournamentById(this.tournamentId).then((tournament: Tournament) => {
       this.tournament = tournament;
-      console.log(tournament.results);
     })
   }
 
