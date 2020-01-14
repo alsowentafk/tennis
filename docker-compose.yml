@@ -20,7 +20,7 @@ services:
       - backend
       - frontend
     volumes: 
-      - /root/tennis/back/images:/root/tennis/back/images
+      - ./back/images:/root/back/images
 
   app-client:
     build:
