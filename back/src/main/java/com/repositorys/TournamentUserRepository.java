@@ -17,6 +17,6 @@ public interface TournamentUserRepository extends CrudRepository<TournamentUser,
     @Query(nativeQuery = true, value = "SELECT tournament_user.user_id FROM tournament_user" +
             " WHERE tournament_id = :tournament_id AND  is_confirmed = true")
     Iterable<BigInteger> findAllUsersFromTournament(@Param("tournament_id") Long tournament_id);
-    @Query(nativeQuery = true, value = "SELECT * FROM tournament_user WHERE is_confirmed = false;")
+    @Query(nativeQuery = true, value = "SELECT * FROM tournament_user WHERE is_confirmed = false AND deleted = false;")
     List<TournamentUser> findAllUnConfirmed();
 }

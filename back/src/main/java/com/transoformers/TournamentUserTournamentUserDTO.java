@@ -16,6 +16,7 @@ public class TournamentUserTournamentUserDTO {
         tournamentUser.setBirth_certificate(tournamentUserDTO.getBirth_certificate());
         tournamentUser.setPay_certificate(tournamentUserDTO.getPay_certificate());
         tournamentUser.setIs_confirmed(tournamentUserDTO.getIs_confirmed());
+        tournamentUser.setDeleted(tournamentUserDTO.getDeleted());
         return tournamentUser;
     }
 
@@ -27,6 +28,7 @@ public class TournamentUserTournamentUserDTO {
         tournamentUserDTO.setBirth_certificate(tournamentUser.getBirth_certificate());
         tournamentUserDTO.setPay_certificate(tournamentUser.getPay_certificate());
         tournamentUserDTO.setIs_confirmed(tournamentUser.getIs_confirmed());
+        tournamentUserDTO.setDeleted(tournamentUser.getDeleted());
         return tournamentUserDTO;
     }
 }

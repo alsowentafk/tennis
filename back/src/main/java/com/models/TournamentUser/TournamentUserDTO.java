@@ -18,4 +18,5 @@ public class TournamentUserDTO {
     private String birth_certificate;
     private String pay_certificate;
     private Boolean is_confirmed;
+    private Boolean deleted;
 }

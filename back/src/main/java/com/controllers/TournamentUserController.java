@@ -61,7 +61,7 @@ public class TournamentUserController {
         String file2 = fileStorageService.storeFile(filePay);
         User user = userRepository.findById(Long.valueOf(user_id)).get();
         Tournament tournament = tournamentRepository.findById(Long.valueOf(tournament_id)).get();
-        tournamentUser.setIs_confirmed(false); tournamentUser.setTournament_id(tournament); tournamentUser.setUser_id(user);
+        tournamentUser.setDeleted(false); tournamentUser.setIs_confirmed(false); tournamentUser.setTournament_id(tournament); tournamentUser.setUser_id(user);
         tournamentUser.setBirth_certificate(file1); tournamentUser.setPay_certificate(file2);
         return tournamentUserService.saveTournamentUser(tournamentUser);
     }

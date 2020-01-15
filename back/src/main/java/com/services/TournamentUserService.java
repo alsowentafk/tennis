@@ -54,7 +54,8 @@ public class TournamentUserService {
         return converter.ConvertToTournamentUserDTO(repository.findById(id).get());
     }
     public void deleteTournamentUser(Long id){
-        repository.deleteById(id);
+        TournamentUser tournamentUser =  repository.findById(id).get();
+        tournamentUser.setDeleted(true);
     }
     public TournamentUserDTO confirm(Long id){
         TournamentUser tournamentUser =  repository.findById(id).get();
