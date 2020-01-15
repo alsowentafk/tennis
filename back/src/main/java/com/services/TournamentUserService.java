@@ -56,6 +56,7 @@ public class TournamentUserService {
     public void deleteTournamentUser(Long id){
         TournamentUser tournamentUser =  repository.findById(id).get();
         tournamentUser.setDeleted(true);
+        repository.save(tournamentUser);
     }
     public TournamentUserDTO confirm(Long id){
         TournamentUser tournamentUser =  repository.findById(id).get();

@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="94eca662-55f8-4724-ad47-ba18f997a4b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/TournamentUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/TournamentUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/models/TournamentUser/TournamentUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/models/TournamentUser/TournamentUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/models/TournamentUser/TournamentUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/models/TournamentUser/TournamentUserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/repositorys/TournamentUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/repositorys/TournamentUserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/services/TournamentUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/services/TournamentUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/transoformers/TournamentUserTournamentUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/transoformers/TournamentUserTournamentUserDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
