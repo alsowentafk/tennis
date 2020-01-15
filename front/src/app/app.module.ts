@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule, DomSanitizer} from '@angular/platform-browser';
 import {LOCALE_ID, NgModule} from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -80,7 +80,7 @@ registerLocaleData(localeUa, 'ua');
     ReactiveFormsModule,
     MatFormFieldModule,
     NgxPaginationModule,
-    SweetAlert2Module.forRoot()
+    SweetAlert2Module.forRoot(),
   ],
   providers: [FormBuilder, {provide: LOCALE_ID, useValue: 'ua'}],
   bootstrap: [AppComponent]

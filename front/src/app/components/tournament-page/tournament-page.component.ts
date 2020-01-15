@@ -5,6 +5,7 @@ import {TournamentService} from '../../Services/tournament.service';
 import {User} from '../../Models/User';
 import {AppComponent} from '../../app.component';
 import Swal from 'sweetalert2'
+import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-tournament-page',
@@ -13,11 +14,15 @@ import Swal from 'sweetalert2'
 })
 export class TournamentPageComponent implements OnInit {
   tournamentId: string;
+  regulation = "https://docs.google.com/document/d/e/2PACX-1vSbgEzSRQlgC6_8uI6LNSdIpkCtabSIZdTT560n0pviZQ8WcAaPddYZ1gzyNVwksfKjXdlAaoMA3Om5U--iF2E/pub?embedded=true;"
   tournament: Tournament = new Tournament('','',new Date(),new Date(), new Date());
-  constructor(private activatedRoute: ActivatedRoute, private tournamentService: TournamentService, private router: Router) {
+  constructor(private activatedRoute: ActivatedRoute, private tournamentService: TournamentService
+              , private router: Router, private sanitizer: DomSanitizer) {
     this.tournamentId = this.activatedRoute.snapshot.paramMap.get('id');
   }
-
+  getSanitizer(value){
+    return this.sanitizer.bypassSecurityTrustResourceUrl(value);
+  }
   ngOnInit() {
     this.tournamentService.findTournamentById(this.tournamentId).then((tournament: Tournament) => {
       this.tournament = tournament;
