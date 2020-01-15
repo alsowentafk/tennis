@@ -11,6 +11,8 @@ import {AppComponent} from '../../app.component';
 import {DatePipe} from '@angular/common';
 import {TournamentUser} from '../../Models/TournamentUser';
 import Swal from "sweetalert2";
+import path from "path";
+import * as uuid from 'uuid';
 
 @Component({
   selector: 'app-registration-on-tournament',
@@ -70,18 +72,34 @@ export class RegistrationOnTournamentComponent implements OnInit, OnDestroy {
       return;
     }
     this.loading_reg = true;
-    this.user.image = (this.registerForm.value.image != '') ? this.registerForm.value.image : this.user.image;
+    const fileName1 = uuid.v4().toString();
+    const fileExt1 = path.extname(this.fileToUpload.name);
+    const fullFileName1 = fileName1 + fileExt1;
+    const newFile1: File = new File([this.fileToUpload], fullFileName1, {type: this.fileToUpload.type});
+
+    const fileName2 = uuid.v4().toString();
+    const fileExt2 = path.extname(this.birthCertificateToUpload.name);
+    const fullFileName2 = fileName2 + fileExt2;
+    const newFile2: File = new File([this.birthCertificateToUpload], fullFileName2, {type: this.birthCertificateToUpload.type});
+
+    const fileName3 = uuid.v4().toString();
+    const fileExt3 = path.extname(this.payCertificateToUpload.name);
+    const fullFileName3 = fileName3 + fileExt3;
+    const newFile3: File = new File([this.payCertificateToUpload], fullFileName3, {type: this.payCertificateToUpload.type});
+
+
+    this.user.image = (this.registerForm.value.image != '') ? newFile1.name : this.user.image;
     this.user.first_name = (this.registerForm.value.firstName != '') ? this.registerForm.value.firstName : this.user.first_name;
     this.user.second_name = (this.registerForm.value.secondName != '') ? this.registerForm.value.secondName : this.user.second_name;
     this.user.surname = (this.registerForm.value.surname != '') ? this.registerForm.value.surname : this.user.surname;
     this.user.birthday = (this.registerForm.value.birthday != '') ? this.registerForm.value.birthday : this.user.birthday;
     this.user.city = (this.registerForm.value.city != '') ? this.registerForm.value.city : this.user.city;
     this.user.hand = (this.registerForm.value.hand != '') ? this.registerForm.value.hand : this.user.hand;
-    this.userService.updateUser(this.user, this.fileToUpload).then((user: User) => {
+    this.userService.updateUser(this.user, newFile1).then((user: User) => {
         this.user = user;
-        const tournamentUser = new TournamentUser(this.previewUrlBirthCertificate, this.previewUrlPayCertificate);
+        const tournamentUser = new TournamentUser(newFile2.name, newFile3.name);
         this.tournamentUserService.regUserOnTournament(this.user.id.toString() ,this.tournamentId,tournamentUser
-          , this.birthCertificateToUpload, this.payCertificateToUpload).then((tournamentUser: TournamentUser) => {
+          , newFile2, newFile3).then((tournamentUser: TournamentUser) => {
           if(tournamentUser === null){
             this.submitted = false;
             this.loading_reg = false;
