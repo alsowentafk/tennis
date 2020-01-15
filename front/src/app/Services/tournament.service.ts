@@ -23,11 +23,7 @@ export class TournamentService {
     params: null
   };
    async getAllTournaments(): Promise<Tournament[]> {
-<<<<<<< HEAD
     const endpoint = 'http://176.114.8.113:8080/api/tournament/getAllTournaments';
-=======
-    const endpoint = 'http://176.114.8.113:8080/api/tournament/getAllTournaments';
->>>>>>> aac9c3f179d165fc5d20bbb3fa44940cbf3e1616
     return await this.httpClient.get<Tournament[]>(endpoint).toPromise();
   }
   async findTournamentById(id: string): Promise<Tournament>{
