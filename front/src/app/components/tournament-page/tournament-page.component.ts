@@ -32,7 +32,7 @@ export class TournamentPageComponent implements OnInit {
     if(sessionStorage.getItem(AppComponent.token) === null){
       Swal.fire({
         icon: 'warning',
-        title: 'Щоб зареєструватись ввійдіть у свій аккаунт',
+        title: 'Щоб зареєструватись на турнір ввійдіть у свій аккаунт або зареєструйтесь',
         target: 'app-tournament-page',
         position: 'top-left'
       });
