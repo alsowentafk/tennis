@@ -21,7 +21,7 @@
             <p>Дата коли можливо відминити реєстрацію на турнір: <span>{{tournament.date_cancel_reg | date : 'mediumDate'}}</span></p>
           </div>
           <div style="text-align: center;"><h4>Регламент - {{tournament.name}}</h4></div>
-          <p></p><div [innerHTML]="tournament.regulations"></div>
+          <iframe style="width: 100%; display: block; height: 70rem" [src]="tournament.regulations"></iframe>
         </div>
       </div>
     </div>

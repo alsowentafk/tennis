@@ -4,11 +4,10 @@
 <app-nav></app-nav>
 <!-- Start: Navigation with Button -->
 <div>
-  <h2 class="text-info">Панель адміністратора</h2>
-</div>
-<div>
   <div class="container" style="margin-top: 10%">
-    <p></p><div [innerHTML]="tournament.results" *ngIf="tournament.results !== null"></div>
+    <p></p><div  *ngIf="tournament.results !== null">
+      <iframe style="width: 100%; display: block; height: 70rem" [src]="tournament.regulations"></iframe>
+  </div>
     <div *ngIf="tournament.results === null || tournament.results === ''" style="text-align: center; margin-top: 20%">
       <h2 class="text-info">Ще немає результатів турніру</h2>
     </div>
