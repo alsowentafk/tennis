@@ -143,6 +143,7 @@ CREATE TABLE `tournament_user` (
   `birth_certificate` varchar(255) NOT NULL,
   `pay_certificate` varchar(255) DEFAULT NULL,
   `is_confirmed` tinyint(1) NOT NULL,
+  `deleted` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `tournament_user_tournament_id_fk` (`tournament_id`),
   KEY `tournament_user_user_id_fk` (`user_id`),
@@ -157,7 +158,7 @@ CREATE TABLE `tournament_user` (
 
 LOCK TABLES `tournament_user` WRITE;
 /*!40000 ALTER TABLE `tournament_user` DISABLE KEYS */;
-INSERT INTO `tournament_user` VALUES (11,42,3,'unknown.jpg','unknown.jpg',1),(12,42,4,'unknown.jpg','unknown.jpg',1),(13,42,5,'unknown.jpg','unknown.jpg',1),(14,42,6,'unknown.jpg','unknown.jpg',1),(15,42,2,'unknown.jpg','unknown.jpg',1);
+INSERT INTO `tournament_user` VALUES (11,42,3,'unknown.jpg','unknown.jpg',1,0),(12,42,4,'unknown.jpg','unknown.jpg',1,0),(13,42,5,'unknown.jpg','unknown.jpg',1,0),(14,42,6,'unknown.jpg','unknown.jpg',1,0),(15,42,2,'unknown.jpg','unknown.jpg',1,0);
 /*!40000 ALTER TABLE `tournament_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -204,4 +205,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-01-13 14:30:50
+-- Dump completed on 2020-01-15 18:13:36
