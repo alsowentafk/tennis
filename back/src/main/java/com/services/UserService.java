@@ -46,7 +46,7 @@ public class UserService  {
         confirmationTokenService.save(confirmationToken);
         SimpleMailMessage mailMessage = new SimpleMailMessage();
         mailMessage.setTo(user.getEmail());
-        mailMessage.setSubject("Підтвердіть реєстрацію на сайті тенісного клубу НТК 'Митра'!\n");
+        mailMessage.setSubject("Підтвердіть реєстрацію на сайті Tennis Club!\n");
         mailMessage.setFrom("KHMEET.Khmelnytskyi@gmail.com");
         mailMessage.setText("Для підтвердження вашого аккаунту, ваш код підтвердження:  : "
                 +  confirmationToken.getConfirmationToken());

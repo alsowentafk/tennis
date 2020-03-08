@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94eca662-55f8-4724-ad47-ba18f997a4b2" name="Default Changelist" comment="" />
+    <list default="true" id="94eca662-55f8-4724-ad47-ba18f997a4b2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/configs/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/configs/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../front/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/e2e/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front/e2e/protractor.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/Services/tournament-user-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/Services/tournament-user-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/Services/tournament.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/Services/tournament.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/Services/user-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/Services/user-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/components/admin-panel/edit-request/edit-request.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/admin-panel/edit-request/edit-request.component.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,10 +43,11 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/images" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -72,15 +85,40 @@
       </list>
     </option>
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="94eca662-55f8-4724-ad47-ba18f997a4b2" name="Default Changelist" comment="" />
+      <created>1582530283503</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582530283503</updated>
+      <workItem from="1582530285218" duration="29000" />
+      <workItem from="1583441678522" duration="75000" />
+      <workItem from="1583482442450" duration="702000" />
+      <workItem from="1583488959922" duration="882000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="102" width="811" height="669" key="#Project_Structure" timestamp="1577980560078">
-      <screen x="0" y="23" width="1440" height="828" />
+    <state x="320" y="102" width="811" height="669" key="#Project_Structure" timestamp="1583441752014">
+      <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state x="320" y="102" width="811" height="669" key="#Project_Structure/0.23.1440.828@0.23.1440.828" timestamp="1577980560078" />
+    <state x="320" y="102" key="#Project_Structure/0.23.1440.829@0.23.1440.829" timestamp="1583441752014" />
     <state x="533" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1578150618416">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="533" y="153" key="#com.intellij.ide.util.MemberChooser/0.23.1440.828@0.23.1440.828" timestamp="1578150618416" />
+    <state x="408" y="172" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1583432366195">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state x="408" y="172" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.829@0.23.1440.829" timestamp="1583432366195" />
     <state x="458" y="191" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578699304792">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
@@ -110,10 +148,14 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="258" y="99" key="Maven.ArtifactSearchDialog/0.23.1440.828@0.23.1440.828" timestamp="1578175559048" />
-    <state x="221" y="76" key="SettingsEditor" timestamp="1578607089763">
+    <state x="221" y="23" width="1024" height="829" key="SettingsEditor" timestamp="1583441731453">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
-    <state x="221" y="76" key="SettingsEditor/0.23.1440.829@0.23.1440.829" timestamp="1578607089763" />
+    <state x="221" y="23" width="1024" height="829" key="SettingsEditor/0.23.1440.829@0.23.1440.829" timestamp="1583441731453" />
+    <state x="397" y="270" key="com.intellij.ide.util.TipDialog" timestamp="1583441682120">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state x="397" y="270" key="com.intellij.ide.util.TipDialog/0.23.1440.829@0.23.1440.829" timestamp="1583441682120" />
     <state x="334" y="261" width="1033" height="541" key="find.popup" timestamp="1578922180524">
       <screen x="0" y="23" width="1440" height="829" />
     </state>

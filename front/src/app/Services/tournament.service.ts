@@ -23,25 +23,25 @@ export class TournamentService {
     params: null
   };
    async getAllTournaments(): Promise<Tournament[]> {
-    const endpoint = 'http://176.114.8.113:8080/api/tournament/getAllTournaments';
+    const endpoint = 'http://localhost:8080/api/tournament/getAllTournaments';
     return await this.httpClient.get<Tournament[]>(endpoint).toPromise();
   }
   async findTournamentById(id: string): Promise<Tournament>{
-    const endpoint = 'http://176.114.8.113:8080/api/tournament/getTournamentById';
+    const endpoint = 'http://localhost:8080/api/tournament/getTournamentById';
     return await this.httpClient.get<Tournament>(endpoint,{params: {'id': String(id)}}).toPromise();
   }
   async addTournament(tournament: Tournament): Promise<Tournament>{
-    const endpoint = 'http://176.114.8.113:8080/api/tournament/addTournament';
+    const endpoint = 'http://localhost:8080/api/tournament/addTournament';
     return await this.httpClient.post<Tournament>(endpoint, tournament, this.httpOptionsAdmin).toPromise();
   }
 
   async updateTournament(tournament: Tournament): Promise<Tournament>{
-    const endpoint = 'http://176.114.8.113:8080/api/tournament/updateTournament';
+    const endpoint = 'http://localhost:8080/api/tournament/updateTournament';
     return await this.httpClient.put<Tournament>(endpoint, tournament, this.httpOptionsAdmin).toPromise();
   }
 
   async delete(id: string){
-    const endpoint = 'http://176.114.8.113:8080/api/tournament/delete';
+    const endpoint = 'http://localhost:8080/api/tournament/delete';
     let options = this.httpOptionsAdmin;
     options.params = new HttpParams().set('id', id);
     return await this.httpClient.delete(endpoint, options).toPromise();

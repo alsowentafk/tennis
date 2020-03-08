@@ -27,7 +27,7 @@ export class TournamentUserService {
   };
   async regUserOnTournament(user_id: string, tournament_id: string, tournamentUser: TournamentUser
                             , fileBirthday: File, filePay: File): Promise<TournamentUser> {
-    const endpoint = 'http://176.114.8.113:8080/api/tournamentUser/regUserOnTournament';
+    const endpoint = 'http://localhost:8080/api/tournamentUser/regUserOnTournament';
     let options = this.httpOptionsUser;
     options.params = new HttpParams().set('user_id', user_id).set('tournament_id', tournament_id);
     options.headers = new HttpHeaders({
@@ -40,24 +40,24 @@ export class TournamentUserService {
     return await this.httpClient.post<TournamentUser>(endpoint, formData, this.httpOptionsUser).toPromise();
   }
   async getAll(): Promise<TournamentUser[]>{
-    const endpoint = 'http://176.114.8.113:8080/api/tournamentUser/getAll';
+    const endpoint = 'http://localhost:8080/api/tournamentUser/getAll';
     return await this.httpClient.get<TournamentUser[]>(endpoint, this.httpOptionsAdmin).toPromise();
   }
   async getById(id: string): Promise<TournamentUser>{
-    const endpoint = 'http://176.114.8.113:8080/api/tournamentUser/getRequestById';
+    const endpoint = 'http://localhost:8080/api/tournamentUser/getRequestById';
     let options = this.httpOptionsAdmin;
     options.params = new HttpParams().set('id', id);
     return await this.httpClient.get<TournamentUser>(endpoint, options).toPromise();
   }
   async confirm(id: string){
-    const endpoint = 'http://176.114.8.113:8080/api/tournamentUser/confirm';
+    const endpoint = 'http://localhost:8080/api/tournamentUser/confirm';
     let options = this.httpOptionsAdmin;
     options.params = new HttpParams().set('id', id);
     return await this.httpClient.put<TournamentUser>(endpoint, {}, options).toPromise();
   }
 
   async delete(id: string){
-    const endpoint = 'http://176.114.8.113:8080/api/tournamentUser/delete';
+    const endpoint = 'http://localhost:8080/api/tournamentUser/delete';
     let options = this.httpOptionsAdmin;
     options.params = new HttpParams().set('id', id);
     return await this.httpClient.delete(endpoint, options).toPromise();
