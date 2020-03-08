@@ -9,6 +9,7 @@
       <h2 class="text-info">Ще немає результатів турніру</h2>
     </div>
     <p></p><div  *ngIf="tournament.results !== null">
+    <h2 class="text-info" style="text-align: center">Результати турніру</h2>
       <iframe style="width: 100%; display: block; height: 70rem" [src]="getSanitizer(tournament.results)"></iframe>
   </div>
   </div>

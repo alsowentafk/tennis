@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94eca662-55f8-4724-ad47-ba18f997a4b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/images/4cf3f1ff-3072-415b-a25e-0e4c62d4ecb9.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/configs/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/configs/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../front/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/e2e/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front/e2e/protractor.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/Services/tournament-user-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/Services/tournament-user-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/Services/tournament.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/Services/tournament.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/Services/user-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/Services/user-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/admin-panel/edit-request/edit-request.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/admin-panel/edit-request/edit-request.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/unknown.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/components/about-us/about-us.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/about-us/about-us.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/components/games/games.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/games/games.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +94,7 @@
       <workItem from="1583441678522" duration="75000" />
       <workItem from="1583482442450" duration="702000" />
       <workItem from="1583488959922" duration="882000" />
+      <workItem from="1583678682787" duration="817000" />
     </task>
     <servers />
   </component>

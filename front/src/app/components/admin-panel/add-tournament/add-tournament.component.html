@@ -6,7 +6,7 @@
 <div class="contact-clean">
   <div  id="reg_form">
   <form (ngSubmit)='onSubmit()' [formGroup]="tournamentForm" method="POST" name="f">
-    <h2 class="text-center">Додання турніру</h2>
+    <h2 class="text-center">Редагування турніру</h2>
     <div class="form-group">
       <label class="control-label" for="name">Назва:</label>
       <input [ngClass]="{ 'is-invalid': submitted && f.name.errors}" class="form-control"
