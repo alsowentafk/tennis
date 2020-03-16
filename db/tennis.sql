@@ -97,7 +97,7 @@ CREATE TABLE `tournament` (
 
 LOCK TABLES `tournament` WRITE;
 /*!40000 ALTER TABLE `tournament` DISABLE KEYS */;
-INSERT INTO `tournament` VALUES (42,'first_tournament','https://docs.google.com/document/d/e/2PACX-1vSbgEzSRQlgC6_8uI6LNSdIpkCtabSIZdTT560n0pviZQ8WcAaPddYZ1gzyNVwksfKjXdlAaoMA3Om5U--iF2E/pub?embedded=true','2020-01-04 02:00:00','2020-01-03 02:00:00','2020-01-02 02:00:00','https://docs.google.com/document/d/e/2PACX-1vRZisaqzWrSJYv0Lm5vh8OTPjYu41anyk4jyQ-VQu-afV_WgAW3EnpdBzPOaGYeWwy2HKbGdhlCBvSO3y9sqrs/pub?embedded=true'),(43,'second_tournament','https://docs.google.com/document/d/e/2PACX-1vQexL_d0ypiUjWuLfcx6L3rx4XkfmmmH_zcEBqlHQMgkUOmIA6TjHAaK2KN9kZB1lVmKaEDlHaYKixOW2rsi7w/pub?embedded=true','2020-01-11 02:00:00','2020-01-10 02:00:00','2020-01-09 02:00:00',''),(44,'third_tournament','https://docs.google.com/document/d/e/2PACX-1vQgQcNF2g66hATRgQNQvkKa2-8VcXBgXRYQgaCfR5UPXgYvyDOfBnIJvm7oZg1gTgCan66djYx0-1Tdh1cBedY/pub?embedded=true','2020-02-01 02:00:00','2020-01-30 02:00:00','2020-01-29 02:00:00','');
+INSERT INTO `tournament` VALUES (42,'first_tournament','https://docs.google.com/document/d/e/2PACX-1vSkZOWuxO-9-RD1CHBvIhVNpeQZth8W9nNwWq5oBXqc8-VlNnn8tCYGQPFkvEn1KOQGgktafeR4vo6o/pub?embedded=true','2020-01-04 02:00:00','2020-01-03 02:00:00','2020-01-02 02:00:00','https://challonge.com/ru/hz6apswz/module'),(43,'second_tournament','https://docs.google.com/document/d/e/2PACX-1vSkZOWuxO-9-RD1CHBvIhVNpeQZth8W9nNwWq5oBXqc8-VlNnn8tCYGQPFkvEn1KOQGgktafeR4vo6o/pub?embedded=true','2020-01-11 02:00:00','2020-01-10 02:00:00','2020-01-09 02:00:00','https://challonge.com/ru/hz6apswz/module'),(44,'third_tournament','https://docs.google.com/document/d/e/2PACX-1vSkZOWuxO-9-RD1CHBvIhVNpeQZth8W9nNwWq5oBXqc8-VlNnn8tCYGQPFkvEn1KOQGgktafeR4vo6o/pub?embedded=true','2020-02-01 02:00:00','2020-01-30 02:00:00','2020-01-29 02:00:00','https://challonge.com/ru/hz6apswz/module');
 /*!40000 ALTER TABLE `tournament` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -205,4 +205,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-03-08 19:20:12
+-- Dump completed on 2020-03-11  8:54:49
