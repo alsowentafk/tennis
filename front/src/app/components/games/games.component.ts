@@ -12,7 +12,7 @@ import {DomSanitizer} from '@angular/platform-browser';
 })
 export class GamesComponent implements OnInit {
   tournamentId: string;
-  tournament: Tournament = new Tournament('','',new Date(),new Date(), new Date());
+  tournament: Tournament = new Tournament('', '', new Date(), new Date(), new Date());
   constructor(private tournamentService: TournamentService, private activatedRoute: ActivatedRoute, private sanitizer: DomSanitizer) {
     this.tournamentId = this.activatedRoute.snapshot.paramMap.get('id');
   }
@@ -20,9 +20,9 @@ export class GamesComponent implements OnInit {
   ngOnInit() {
     this.tournamentService.findTournamentById(this.tournamentId).then((tournament: Tournament) => {
       this.tournament = tournament;
-    })
+    });
   }
-  getSanitizer(value){
+  getSanitizer(value) {
     return this.sanitizer.bypassSecurityTrustResourceUrl(value);
   }
 }

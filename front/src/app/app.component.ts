@@ -21,5 +21,5 @@ export class AppComponent {
     b.lastModifiedDate = new Date();
     b.name = fileName;
     return <File>theBlob;
-  }
+  };
 }
